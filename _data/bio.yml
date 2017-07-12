@@ -1,4 +1,4 @@
-name:       "Tete(Jason) Xiao"
+name:       "Tete (Jason) Xiao"
 title:      "Undergraduate Student [at] Peking University, P.R. China (class of 2019)"
 email:      "jasonhsiao97 [at] gmail.com"
 head_pic:   /images/self-portrait/me.jpg
@@ -6,9 +6,9 @@ deep_pic:   /images/self-portrait/deep-me.jpg
 normal:
   date:     "July. 2017"
   title:    ""
-  content:  "<strong>Tete Xiao</strong> is an undergraduate student majoring Intelligence Science at <strong>Peking University (PKU)</strong>, the premium university in China. He is a senior intern at <strong>Megvii(Face++) Inc.</strong>, a leading Chinese AI start-up,
+  content:  "<strong>Tete Xiao</strong> is an undergraduate student majoring Intelligence Science at <strong>Peking University (PKU)</strong>, the premium university in China. He is a senior intern at <strong>Megvii (Face++) Inc.</strong>, a leading Chinese AI start-up,
   mentored by <a href='https://scholar.google.com/citations?user=p3z4sVUAAAAJ&hl=zh-CN'>Mr. Yuning Jiang</a> and supervised by 
-  <a href='http://www.jiansun.org/'>Dr. Jian Sun</a>. He is also a research assistant at <strong>Institute of Computer Science and Technology (ICST), Peking University</strong>, mentored by <a href='http://www.muyadong.com/'>Dr. Yadong Mu.</a>. His research interests lie in the field of <strong>Machine Learning</strong>, <strong>Computer Vision</strong> and <strong>Natural Language Processing</strong>."
+  <a href='http://www.jiansun.org/'>Dr. Jian Sun</a>. He is also a research assistant at <strong>Institute of Computer Science and Technology (ICST), Peking University</strong>, mentored by <a href='http://www.muyadong.com/'>Dr. Yadong Mu.</a>. His research interests lie in the field of <strong>Object Detection</strong>, <strong>Computer Vision</strong> and <strong>Machine Learning</strong>. <br> Tete has been a competitive in programming contest since he was in high school. He won a gold medal in 2017 ACM-ICPC Asia Regional Contest. In high school, he was admitted to Shandong Province Team of 2014 as first place winner to compete in National Olympaid in Informatics, where he won a bronze medal."
 short:
   date:
   title:  "In Deep."
