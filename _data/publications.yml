@@ -1,6 +1,6 @@
-- title: 'FastMask: Segment Multi-scale Object Candidates in One Shot'
-  date:  'Nov. 2016'
-  imgurl: '/images/projects/2016/hexiang2016fastmask.png'
+- title: 'What Can Help Pedestrian Detection?'
+  date:  'Nov. 2017'
+  imgurl: '/images/projects/2017/tete2017whatcanhelp.jpg'
   imgprop: 'frame'
   selected: true
   authors:
@@ -17,9 +17,9 @@
   publisher:  'CVPR 2017'
   status:   '(Poster)'
   place:    'in Honolulu, Hawaii'
-  desc: 'Aggregating extra features has been considered as an effective approach to boost traditional pedestrian detection methods. However, there is still a lack of studies on whether and how CNN-based pedestrian detectors can benefit from these extra features. The first contribution of this paper is exploring this issue by aggregating extra features into CNN-based pedestrian detection framework. Through extensive experiments, we evaluate the effects of different kinds of extra features quantitatively. Moreover, we propose a novel network architecture, namely HyperLearner, to jointly learn pedestrian detection as well as the given extra feature. By multi-task training, HyperLearner is able to utilize the information of given features and improve detection performance without extra inputs in inference. The experimental results on multiple pedestrian benchmarks validate the effectiveness of the proposed HyperLearner.'
+  desc: 'Aggregating extra features has been considered as an effective approach to boost traditional pedestrian detection methods. The first contribution of this paper is exploring this issue by aggregating extra features into CNN-based pedestrian detection framework. We evaluate the effects of different kinds of extra features quantitatively. Moreover, we propose a novel network architecture, namely HyperLearner, to jointly learn pedestrian detection as well as the given extra feature. By multi-task training, HyperLearner is able to utilize the information of given features and improve detection performance without extra inputs in inference.'
   tags:
     - name: 'arXiv'
       url:  'https://arxiv.org/abs/1705.02757'
     - name: 'pdf'
-      url:  '/pdf/hexiang2016fastmask.pdf'
+      url:  '/pdf/tete2017whatcanhelp.pdf'
