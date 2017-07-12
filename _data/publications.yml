@@ -3,6 +3,7 @@
   imgurl: '/images/projects/2017/tete2017whatcanhelp.png'
   imgprop: 'frame'
   selected: true
+  has_equal_contribution: true
   authors:
     - name: J. Mao
       url:  ''
