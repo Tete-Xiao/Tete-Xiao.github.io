@@ -78,7 +78,7 @@ layout: home
           {% endfor %}
         </div>
         <div class="desc">
-          <p>{{ publication.desc }{% if author.equal_contribution %}<br>*: Equal Contribution{% endif %}}</p>
+          <p>{{ publication.desc }{% if publication.has_equal_contribution %}<br>*: Equal contribution {% endif %}}</p>
         </div>
         <div class="publish">
           <span class="publisher">{{ publication.publisher }}</span>
