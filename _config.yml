@@ -1,0 +1,47 @@
+# Site settings
+title: Hexiang Hu
+description:
+  en: "This is an academic website for Hexiang Hu to share his experiences, projects, publications and tech/non-tech posts. Hexiang Hu is a Ph.D. student at University of California Los Angeles(UCLA), working with Prof. Fei Sha. His research interests lie in the field of Machine Learning and Computer Vison, particularly in Deep Learning. "
+  cn: "这是胡鹤翔的个人学术主页，用于分享他的个人经历，项目，学术论文，技术相关/不相关的博客。"
+keywords:
+  en: "Hexiang Hu,Publications,Posts,Research,Deep Learning,Computer Vision,Natural Language Processing"
+  cn: "胡鹤翔,学术论文,博客,研究,深度学习,计算机视觉,自然语言处理"
+background: /images/background/background-cube.jpg
+deep_background: /images/background/background-deepcube-2.jpg
+
+baseurl: ""
+# the subpath of your site, e.g. /blog/
+url: "https://hexiang-hu.github.io"
+# the base hostname & protocol for your sit
+
+# Paginationœ
+paginate: 6
+paginate_path: "/posts/page/:num/"
+
+# Build settings
+markdown: kramdown
+
+# permalink setting
+permalink: pretty
+# highlighter: rouge
+highlighter: rouge
+
+# Social media link for the site
+social:
+  twitter:    Hexiang_Hu
+  github:     Hexiang-Hu
+  facebook:   Hu.Hexiang
+  linkedin:   hexianghu
+  rss:        /feed.xml
+
+# customized document resources
+collections:
+  projects:
+    output: true
+
+scss:
+  sass_dir: _scss
+  style: :compressed
+
+gems:
+  ['jekyll-paginate', 'jekyll/scholar', 'jekyll-sitemap']

@@ -1,0 +1,13 @@
+name:       "Hexiang(Frank) Hu"
+title:      "Ph.D. Student [at] USC"
+email:      "hexiang.frank.hu [at] gmail.com"
+head_pic:   /images/self-portrait/me.jpg
+deep_pic:   /images/self-portrait/deep-me.jpg
+normal:
+  date:     "Sept. 2016"
+  title:    ""
+  content:  "<strong>Hexiang Hu</strong> is a Computer Science Ph.D. student in Viterbi School of Engineering at <strong>University of Southern California(USC)</strong>, working with <a href='http://www-bcf.usc.edu/~feisha/'>Prof. Fei Sha</a>. Prior to this, He was a Ph.D. student in Henry Samueli School of Engineering and Applied Science at <strong>University of California, Los Angeles(UCLA)</strong>. He earned his Bachelor’s degrees in Computer Science from Zhejiang University and Simon Fraser University with honor. His research interests lie in the field of <strong>Machine Learning</strong>, <strong>Computer Vision</strong> and <strong>Natural Language Processing</strong>."
+short:
+  date:
+  title:  "In Deep."
+  content: "I am passionte with Machine Learning, Computer Vision as well as Natural Language Processing. I aim to combine <em class='text-grey-bright'>the great power of vision and language</em>."

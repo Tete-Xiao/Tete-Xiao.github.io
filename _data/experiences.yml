@@ -1,0 +1,58 @@
+- date:  "2017 - "
+  title: "PhD student @ USC"
+  desc:  "Large Scale Machine Learning, Vision and Language"
+  host:
+    name: "<a href='http://www-bcf.usc.edu/~feisha/'>Prof. Fei Sha</a>"
+    role: "Supervisor"
+  brief: true
+- date:  "Summer 2017"
+  title: "Applied Scientist Intern @ AWS DL"
+  desc:  "Large Scale Machine Learning"
+  host:  false
+  brief: true
+- date:  "2016 - 2017"
+  title: "PhD student @ UCLA"
+  desc:  "Object Detection, Semantic Segmentation"
+  host:
+    name: "<a href='http://www-bcf.usc.edu/~feisha/'>Prof. Fei Sha</a>"
+    role: "Supervisor"
+  brief: true
+- date:  "Summer 2016"
+  title: "Research Intern @ Megvii Inc.(Face++)"
+  desc:  "Instance-level Segmentation"
+  host:  false
+  brief: true
+- date:  "Jun. 2015 - Apr. 2016"
+  title: "Research Assistant @ VML"
+  desc:  "Multi-label Classification and Group Activity Recognition"
+  host:
+    name: "<a href='http://www.cs.sfu.ca/~mori'>Prof. Greg Mori</a>"
+    role: "Supervisor"
+  brief: true
+- date:  "Jan. 2015 - Jun. 2015 "
+  title: "Research Assistant @ MIAL"
+  desc:  "Skin Disease Classification"
+  host:
+    name:  "<a href='http://www.cs.sfu.ca/~hamarneh/'>Prof. Ghassan Harmarneh</a>"
+    role: "Supervisor"
+  brief: false
+- date:  "Summer 2014"
+  title: "Software Engineer Intern @ Microsoft"
+  desc:  ".NET Virtual Machine Inspectation"
+  host:  false
+  brief: false
+- date:  "2013 - 2016"
+  title: "Undergraduate student @ SFU"
+  desc:  "B.Sc. in Computing Science (with special concentration on Artificial Intelligence and System)"
+  host:  false
+  brief: false
+- date:  "Summer 2012"
+  title: "Exchange student @ UCLA"
+  desc:  "Collaborated program by ZJU and UCLA"
+  host:  false
+  brief: false
+- date:  "2011 - 2016"
+  title: "Undergraduate student @ ZJU"
+  desc:  "B.Eng. in Computer Science and Technology"
+  host:  false
+  brief: false
