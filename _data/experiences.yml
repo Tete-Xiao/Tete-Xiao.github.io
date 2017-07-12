@@ -9,13 +9,11 @@
   title: "Research Intern @ Megvii (Face++) Inc."
   desc:  "Pedestrian Deteciton, Object Detection and Computer Vision"
   host:
-    name:  "<a href='https://scholar.google.com/citations?user=p3z4sVUAAAAJ&hl=zh-CN'>Mr. Yuning Jiang</a>"
-    role: "Mentor"
-  host:
     name:  "<a href='http://www.jiansun.org/'>Dr. Jian Sun</a>"
     role: "Supervisor"
   brief: true
-- date:  "2015 - "
+- date:  "Sept. 2015 - "
   title: "Undergraduate student @ Peking University"
   desc:  "B.S. in Intelligence Science and Technology"
+  host: false
   brief: true

@@ -1,160 +1,25 @@
-- title: 'Being Negative but Constructively: Lessons Learnt from Creating Better Visual Question Answering Datasets'
-  date:  'April. 2017'
-  imgurl: '/images/projects/2017/hexiang2017negative.png'
-  imgprop: 'frame'
-  selected: true
-  authors:
-    - name: W.-L. Chao
-      url:  'http://www-scf.usc.edu/~weilunc/index.html'
-      equal_contribution: true
-    - name: <strong>H. Hu</strong>
-      url:  ''
-      equal_contribution: true
-    - name: F. Sha
-      url:  'http://www-bcf.usc.edu/~feisha/'
-  publisher:  'ArXiv 2017'
-  status:   '(Tech Report)'
-  place:    ''
-  desc: 'We show the design of the decoy answers has a significant impact on how and what the learning models learn from the datasets. In particular, the resulting learner can ignore the visual information, the question, or the both while still doing well on the task. Inspired by this, we propose automatic procedures of how to remedy such design deficiencies.'
-  tags:
-    - name: 'arXiv'
-      url:  ''
-    - name: 'pdf'
-      url:  '/pdf/hexiang2017negative.pdf'
-    - name: 'project'
-      url:  'http://www.teds.usc.edu/website_vqa'
-- title: 'LabelBank: Revisiting Global Perspectives for Semantic Segmentation'
-  date:  'March. 2017'
-  imgurl: '/images/projects/2017/hexiang2017labelbank.png'
-  imgprop: 'frame'
-  selected: true
-  authors:
-    - name: <strong>H. Hu</strong>
-      url:  ''
-      equal_contribution: true
-    - name: Z. Deng
-      url:  'http://www.sfu.ca/~zhiweid'
-      equal_contribution: true
-    - name: G.-T. Zhou
-      url:  'http://www.cs.sfu.ca/~gza11/personal/'
-    - name: F. Sha
-      url:  'http://www-bcf.usc.edu/~feisha/'
-    - name: G. Mori
-      url:  'https://www.cs.sfu.ca/~mori/'
-  publisher:  'ArXiv 2017'
-  status:   '(Tech Report)'
-  place:    ''
-  desc: 'We show the ability of our framework to improve semantic segmentation performance in a variety of settings. We learn models for extracting a holistic LabelBank from visual cues, attributes, and/or textual descriptions. We demonstrate improvements in semantic segmentation accuracy on standard datasets across a range of state-of-the-art segmentation architectures and holistic inference approaches.'
-  tags:
-    - name: 'arXiv'
-      url:  'https://arxiv.org/abs/1703.09891'
-    - name: 'pdf'
-      url:  '/pdf/hexiang2017labelbank.pdf'
 - title: 'FastMask: Segment Multi-scale Object Candidates in One Shot'
   date:  'Nov. 2016'
   imgurl: '/images/projects/2016/hexiang2016fastmask.png'
   imgprop: 'frame'
   selected: true
   authors:
-    - name: <strong>H. Hu</strong>
+    - name: J. Mao
       url:  ''
       equal_contribution: true
-    - name: S. Lan
+    - name: <strong>T. Xiao</strong>
       url:  ''
       equal_contribution: true
     - name: Y. Jiang
       url:  ''
     - name: Z. Cao
       url:  ''
-    - name: F. Sha
-      url:  'http://www-bcf.usc.edu/~feisha/'
   publisher:  'CVPR 2017'
-  status:   '(Spotlight)'
+  status:   '(Poster)'
   place:    'in Honolulu, Hawaii'
-  desc: 'We present a novel segment proposal framework, namely FastMask, which takes advantage of the hierarchical structure in deep convolutional neural network to segment multi-scale objects in one shot. Through leveraging feature pyramid and sliding-window region attention, we made instance proposal not only fast but more accurate.'
+  desc: 'Aggregating extra features has been considered as an effective approach to boost traditional pedestrian detection methods. However, there is still a lack of studies on whether and how CNN-based pedestrian detectors can benefit from these extra features. The first contribution of this paper is exploring this issue by aggregating extra features into CNN-based pedestrian detection framework. Through extensive experiments, we evaluate the effects of different kinds of extra features quantitatively. Moreover, we propose a novel network architecture, namely HyperLearner, to jointly learn pedestrian detection as well as the given extra feature. By multi-task training, HyperLearner is able to utilize the information of given features and improve detection performance without extra inputs in inference. The experimental results on multiple pedestrian benchmarks validate the effectiveness of the proposed HyperLearner.'
   tags:
     - name: 'arXiv'
-      url:  'https://arxiv.org/abs/1612.08843'
+      url:  'https://arxiv.org/abs/1705.02757'
     - name: 'pdf'
       url:  '/pdf/hexiang2016fastmask.pdf'
-    - name: 'code'
-      url:  'https://github.com/voidrank/FastMask'
-- title: 'Recalling Holistic Information for Semantic Segmentation'
-  date:  'Nov. 2016'
-  imgurl: '/images/projects/2016/hexiang2016holistic.png'
-  selected: false
-  authors:
-    - name: <strong>H. Hu</strong>
-      url:  ''
-      equal_contribution: true
-    - name: Z. Deng
-      url:  'http://www.sfu.ca/~zhiweid'
-      equal_contribution: true
-    - name: G.-T. Zhou
-      url:  'http://www.cs.sfu.ca/~gza11/personal/'
-    - name: F. Sha
-      url:  'http://www-bcf.usc.edu/~feisha/'
-    - name: G. Mori
-      url:  'https://www.cs.sfu.ca/~mori/'
-  publisher: 'ArXiv 2016'
-  status:    '(Tech. Report)'
-  place:     ''
-  desc: 'We advocate that high-recall holistic inference of image concepts provides valuable information for detailed pixel labeling. A two-stream neural network architecture is proposed to facilitate information flow from holistic information to local pixels.'
-  tags:
-    - name: 'arXiv'
-      url:  'https://arxiv.org/abs/1611.08061'
-    - name: 'pdf'
-      url:  'https://arxiv.org/pdf/1611.08061v1.pdf'
-    # - name: 'project'
-    #   url:  '/projects/holistic'
-- title: 'Learning Structured Inference Neural Networks with Label Relations'
-  date:  'Nov. 2015'
-  imgurl: '/images/projects/2015/hexiangh2015sinn.jpg'
-  selected: true
-  authors:
-    - name: <strong>H. Hu</strong>
-      url:  ''
-    - name: G.-T. Zhou
-      url:  'http://www.cs.sfu.ca/~gza11/personal/'
-    - name: Z. Deng
-      url:  'http://www.sfu.ca/~zhiweid'
-    - name: Z. Liao
-      url:  'http://web.engr.illinois.edu/~liao17/'
-    - name: G. Mori
-      url:  'https://www.cs.sfu.ca/~mori/'
-  publisher:  'CVPR 2016'
-  status:  ''
-  place:   'in Las Vegas, Nevada'
-  desc: 'We propose a generic structured model that leverages diverse label relations to improve image classification performance. It employs a novel stacked label prediction neural network, capturing both inter-level and intra-level label semantics. The design of this framework naurally extends to leverage partial observations in the label space to inference the rest label space.'
-  tags:
-    - name: 'arXiv'
-      url:  'http://arxiv.org/abs/1511.05616'
-    - name: 'pdf'
-      url:  '/pdf/hexiang2015sinn.pdf'
-    - name: 'project'
-      url:  '/projects/sinn'
-- title: 'Structure Inference Machines: Recurrent Neural Networks for Analyzing Relations in Group Activity Recognition'
-  date:  'Nov. 2015'
-  imgurl: '/images/projects/2015/zhiweid2015bprnn.jpg'
-  selected: true
-  authors:
-    - name: Z. Deng
-      url:  'http://www.sfu.ca/~zhiweid'
-    - name: A. Vahdat
-      url:  ''
-    - name: <strong>H. Hu</strong>
-      url:  ''
-    - name: G. Mori
-      url:  'https://www.cs.sfu.ca/~mori/'
-  publisher:  'CVPR 2016'
-  status:   ''
-  place:   'in Las Vegas, Nevada'
-  desc: 'We propose a method to integrate graphical models and deep neural networks into a joint framework with a sequential prediction approximation, modeled by recurrent neural network. This framework simultaneously predicts the underline structure of interactions between people and inferences the corresponding labels for individual and group.'
-  tags:
-    - name: 'arXiv'
-      url:  'http://arxiv.org/abs/1511.04196'
-    - name: 'pdf'
-      url:  'http://arxiv.org/pdf/1511.04196.pdf'
-    - name: 'site'
-      url:  'http://www.sfu.ca/~zhiweid/projects/SIF_project.html'
-
