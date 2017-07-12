@@ -1,12 +1,14 @@
-name:       "Hexiang(Frank) Hu"
-title:      "Ph.D. Student [at] USC"
-email:      "hexiang.frank.hu [at] gmail.com"
+name:       "Tete(Jason) Xiao"
+title:      "Undergraduate Student [at] Peking University, P.R. China (class of 2019)"
+email:      "jasonhsiao97 [at] gmail.com"
 head_pic:   /images/self-portrait/me.jpg
 deep_pic:   /images/self-portrait/deep-me.jpg
 normal:
-  date:     "Sept. 2016"
+  date:     "July. 2017"
   title:    ""
-  content:  "<strong>Hexiang Hu</strong> is a Computer Science Ph.D. student in Viterbi School of Engineering at <strong>University of Southern California(USC)</strong>, working with <a href='http://www-bcf.usc.edu/~feisha/'>Prof. Fei Sha</a>. Prior to this, He was a Ph.D. student in Henry Samueli School of Engineering and Applied Science at <strong>University of California, Los Angeles(UCLA)</strong>. He earned his Bachelor’s degrees in Computer Science from Zhejiang University and Simon Fraser University with honor. His research interests lie in the field of <strong>Machine Learning</strong>, <strong>Computer Vision</strong> and <strong>Natural Language Processing</strong>."
+  content:  "<strong>Tete Xiao</strong> is an undergraduate student majoring Intelligence Science at <strong>Peking University (PKU)</strong>, the premium university in China. He is a senior intern at <strong>Megvii(Face++) Inc.</strong>, a leading Chinese AI start-up,
+  mentored by <a href='https://scholar.google.com/citations?user=p3z4sVUAAAAJ&hl=zh-CN'>Mr. Yuning Jiang</a> and supervised by 
+  <a href='http://www.jiansun.org/'>Dr. Jian Sun</a>. He is also a research assistant at <strong>Institute of Computer Science and Technology (ICST), Peking University</strong>, mentored by <a href='http://www.muyadong.com/'>Dr. Yadong Mu.</a>. His research interests lie in the field of <strong>Machine Learning</strong>, <strong>Computer Vision</strong> and <strong>Natural Language Processing</strong>."
 short:
   date:
   title:  "In Deep."
