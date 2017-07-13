@@ -11,7 +11,7 @@
 }
 
 .pat {
-  radius:         200px;
+  radius:         15px;
   float:          left !important;
   margin-top:     0.2cm;
 }
@@ -23,6 +23,7 @@
 }
 
 .pat-right > .title {
+  white-space:  nowrap;
   font-weight:  600;
 }
 
