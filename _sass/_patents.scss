@@ -12,7 +12,7 @@
 
 .pat {
   border-top:     thin solid #c0c0c0;
-  radius:         15px;
+  radius:         10px;
   float:          left !important;
   margin-top:     #{$spacing-unit};
   padding-top:    #{$spacing-unit};
@@ -21,8 +21,8 @@
 
 .pat-right {
   float:         left;
-  width: -webkit-calc(60% - (#{$spacing-unit} / 2));
-  width:         calc(60% - (#{$spacing-unit} / 2));
+  width: -webkit-calc(100% - (#{$spacing-unit} / 2));
+  width:         calc(100% - (#{$spacing-unit} / 2));
 }
 
 .pat-right > .title {
