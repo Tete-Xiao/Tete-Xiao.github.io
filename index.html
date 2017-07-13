@@ -115,11 +115,12 @@ layout: home
   {% for patent in site.data.patents %}
   {% if patent.selected %}
     <div class="pat">
+    <div class="pat-right">
       <div class="title">
         {{ patent.title }}
       </div>
       <div class="authors">
-        {% for author in publication.authors %}
+        {% for author in patent.authors %}
           <a class="author" href="{{ author.url }}">
             {{ author.name | prepend: ' '}}
           </a>
@@ -131,6 +132,7 @@ layout: home
         <span class="status">{{ patent.status }}</span>
         <span class="patent_number">{{ patent.patent_number }}</span>
       </div>
+    </div>
     </div>
   {% endif %}
   {% endfor %}

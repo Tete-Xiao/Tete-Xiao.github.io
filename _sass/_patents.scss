@@ -13,55 +13,44 @@
 .pat {
   border-top:     thin solid #c0c0c0;
   radius:         15px;
+  float:          left !important;
   margin-top:     #{$spacing-unit};
   padding-top:    #{$spacing-unit};
   overflow:       auto;
-  float:         left !important;
-  width: -webkit-calc(100% - (#{$spacing-unit} / 2));
-  width:         calc(100% - (#{$spacing-unit} / 2));
 }
 
-@include media-query($on-laptop) {
-  .pat {
-    float:         none;
-    margin:        10px auto;
-    width: -webkit-calc(100% - (#{$spacing-unit} / 2));
-    width:         calc(100% - (#{$spacing-unit} / 2));
-  }
+.pat-right {
+  float:         left;
+  width: -webkit-calc(60% - (#{$spacing-unit} / 2));
+  width:         calc(60% - (#{$spacing-unit} / 2));
 }
 
-.pat > .title {
+.pat-right > .title {
   font-weight:  600;
 }
 
-.pat > .authors > .author {
+.pat-right > .authors > .author {
   color:          $blue-color;
   font-weight:    400;
 }
 
-.pat > .info {
+.pat-right > .info {
   float: right;
 }
 
-.pat > .info > .place {
+.pat-right > .info > .place {
   color:          $blue-color-dark;
   font-size:      16px;
 }
 
-.pat > .info > .status {
+.pat-right > .info > .status {
   color:          $red-color-dark;
   font-weight:    800;
   font-size:      16px;
-  @include media-query($on-palm) {
-    display: none;
-  }
 }
 
-.pat > .info > .patent_number {
+.pat-right > .info > .patent_number {
   color:          $blue-color;
   font-weight:    500;
   font-size:      16px;
-  @include media-query($on-palm) {
-    display: none;
-  }
 }
