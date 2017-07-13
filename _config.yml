@@ -4,7 +4,7 @@ description:
   en: "This is an academic website for Tete Xiao to share his experiences, projects, publications and tech/non-tech posts. Tete Xiao is an undergraduate student at Peking University (PKU). His research interests lie in the field of Machine Learning and Computer Vison."
   cn: "这是肖特特的个人学术主页，用于分享他的个人经历，项目，学术论文，技术相关/不相关的博客。"
 keywords:
-  en: "Hexiang Hu,Publications,Posts,Research,Deep Learning,Computer Vision,Natural Language Processing"
+  en: "Tete Xiao,Publications,Posts,Research,Deep Learning,Computer Vision,Natural Language Processing"
   cn: "肖特特,学术论文,博客,研究,深度学习,计算机视觉,自然语言处理"
 background: /images/background/background-cube.jpg
 deep_background: /images/background/background-deepcube-2.jpg
@@ -28,7 +28,7 @@ highlighter: rouge
 
 # Social media link for the site
 social:
-  twitter:    Hexiang_Hu
+  twitter:    jasonhsiao97
   github:     Tete-Xiao
   facebook:   jasonhsiao97
   linkedin:   tetexiao
