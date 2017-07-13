@@ -12,7 +12,7 @@
 
 .pat {
   radius:         15px;
-  float:          left;
+  float:          left !important;
   margin-top:     0.15cm;
 }
 
@@ -23,6 +23,7 @@
 }
 
 .pat-right {
+  clear:         both;
   float:         left;
   width: -webkit-calc(100% - (#{$spacing-unit} / 2));
   width:         calc(100% - (#{$spacing-unit} / 2));
