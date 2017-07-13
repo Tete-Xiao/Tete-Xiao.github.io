@@ -17,14 +17,18 @@
 }
 
 .pat-right {
-  clear:         left;
   float:         left;
   width: -webkit-calc(100% - (#{$spacing-unit} / 2));
   width:         calc(100% - (#{$spacing-unit} / 2));
 }
 
+.pat-right:after {
+  content:  '';
+  display:block;
+  clear:    both;
+}
+
 .pat-right > .title {
-  clear: both;
   white-space:  nowrap;
   font-weight:  1000;
 }
