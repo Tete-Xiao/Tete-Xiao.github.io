@@ -1,0 +1,57 @@
+
+.patents {
+  max-width:        -webkit-calc(100% - (#{$spacing-unit} / 2));
+  max-width:        calc(100% - (#{$spacing-unit} / 2));
+  margin-top:       #{$spacing-unit};
+  font-family:      'Roboto',sans-serif, Helvetica;
+}
+
+.pat-list {
+  overflow:         auto;
+}
+
+.pat {
+  border-top:     thin solid #c0c0c0;
+  radius:         15px;
+  margin-top:     #{$spacing-unit};
+  padding-top:    #{$spacing-unit};
+  overflow:       auto;
+  float:         left;
+  width: -webkit-calc(100% - (#{$spacing-unit} / 2));
+  width:         calc(100% - (#{$spacing-unit} / 2));
+
+.pat > .title {
+  font-weight:  600;
+}
+
+.pat > .authors > .author {
+  color:          $blue-color;
+  font-weight:    400;
+}
+
+.pat > .info {
+  float: right;
+}
+
+.pat > .info > .place {
+  color:          $blue-color-dark;
+  font-size:      16px;
+}
+
+.pat > .info > .status {
+  color:          $red-color-dark;
+  font-weight:    800;
+  font-size:      16px;
+  @include media-query($on-palm) {
+    display: none;
+  }
+}
+
+.pat > .info > .patent_number {
+  color:          $blue-color;
+  font-weight:    500;
+  font-size:      16px;
+  @include media-query($on-palm) {
+    display: none;
+  }
+}
