@@ -11,8 +11,7 @@
 }
 
 .pat {
-  border-top:     thin solid #c0c0c0;
-  radius:         15px;
+  radius:         10px;
   float:          left !important;
   margin-top:     #{$spacing-unit};
   padding-top:    #{$spacing-unit};
@@ -35,7 +34,7 @@
 }
 
 .pat-right > .info {
-  float: right;
+  float: left;
 }
 
 .pat-right > .info > .place {
