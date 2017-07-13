@@ -13,13 +13,13 @@
 .pat {
   radius:         15px;
   float:          left !important;
-  margin-top:     0.2cm;
+  margin-top:     0.15cm;
 }
 
 .pat-right {
   float:         left;
-  width: -webkit-calc(80% - (#{$spacing-unit} / 2));
-  width:         calc(80% - (#{$spacing-unit} / 2));
+  width: -webkit-calc(60% - (#{$spacing-unit} / 2));
+  width:         calc(60% - (#{$spacing-unit} / 2));
 }
 
 .pat-right > .title {
