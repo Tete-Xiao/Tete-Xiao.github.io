@@ -16,9 +16,18 @@
   margin-top:     #{$spacing-unit};
   padding-top:    #{$spacing-unit};
   overflow:       auto;
-  float:         left;
+  float:         left !important;
   width: -webkit-calc(100% - (#{$spacing-unit} / 2));
   width:         calc(100% - (#{$spacing-unit} / 2));
+}
+
+@include media-query($on-laptop) {
+  .pat {
+    float:         none;
+    margin:        10px auto;
+    width: -webkit-calc(100% - (#{$spacing-unit} / 2));
+    width:         calc(100% - (#{$spacing-unit} / 2));
+  }
 }
 
 .pat > .title {
