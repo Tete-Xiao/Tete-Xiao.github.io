@@ -1,0 +1,38 @@
+---
+layout: page
+description: "Full patent list for Tete"
+noindex:  true
+---
+
+<div id="patents" class="patents">
+  <h1 class="lg-heading text-center">
+    <i class="fa fa-file" aria-hidden="true"></i>
+    Full patent List
+  </h1>
+
+  <div class="pat-navigator"></div>
+
+  {% for patent in site.data.patents %}
+    <div class="pat">
+    <div class="pat-right">
+      <div class="title">
+        {{ patent.title }}
+      </div>
+      <div class="authors">
+        {% for author in patent.authors %}
+          <a class="author" href="{{ author.url }}">
+            {{ author.name | prepend: ' '}}
+          </a>
+          {% if forloop.last == false %},{% endif %}
+        {% endfor %}
+      </div>
+      <div class="info">
+        <span class="place">{{ patent.place }}</span>
+        <span class="status">{{ patent.status }}</span>
+        <span class="patent_number">{{ patent.patent_number }}</span>
+      </div>
+    </div>
+    </div>
+  {% endfor %}
+
+</div>
