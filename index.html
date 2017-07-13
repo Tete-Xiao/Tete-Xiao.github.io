@@ -105,4 +105,40 @@ layout: home
   </div> 
 </div>
 
+<div id="patents" class="patents">
+  <h1 class="md-heading text-center">
+    <i class="fa fa-file" aria-hidden="true"></i>
+    Patents
+  </h1>
+
+  <div class="pat-list">
+  {% for patent in site.data.patents %}
+  {% if patent.selected %}
+    <div class="pat">
+      <div class="title">
+        {{ patent.title }}
+      </div>
+      <div class="authors">
+        {% for author in publication.authors %}
+          <a class="author" href="{{ author.url }}">
+            {{ author.name | prepend: ' '}}
+          </a>
+          {% if forloop.last == false %},{% endif %}
+        {% endfor %}
+      </div>
+      <div class="desc">
+        <p>{{ publication.desc }}</p>
+      </div>
+      <div class="info">
+        <span class="place">{{ patent.place }}</span>
+        <span class="status">{{ patent.status }}</span>
+        <span class="patent_number">{{ patent.patent_number }}</span>
+      </div>
+    </div>
+  {% endif %}
+  {% endfor %}
+  </div>
+
+</div>
+
 </div>
