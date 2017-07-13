@@ -23,6 +23,7 @@
 }
 
 .pat-right > .title {
+  float: clear;
   white-space:  nowrap;
   font-weight:  600;
 }
@@ -51,5 +52,4 @@
   color:          $blue-color;
   font-weight:    500;
   font-size:      16px;
-  word-wrap:    break-word;
 }
