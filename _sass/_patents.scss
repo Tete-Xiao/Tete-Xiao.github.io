@@ -12,20 +12,20 @@
 
 .pat {
   radius:         15px;
-  float:          left !important;
+  float:          left;
   margin-top:     0.15cm;
+}
+
+.pat:after {
+  content:  '';
+  display:  block;
+  clear:    both;
 }
 
 .pat-right {
   float:         left;
   width: -webkit-calc(100% - (#{$spacing-unit} / 2));
   width:         calc(100% - (#{$spacing-unit} / 2));
-}
-
-.pat-right:after {
-  content:  '';
-  display:block;
-  clear:    both;
 }
 
 .pat-right > .title {
