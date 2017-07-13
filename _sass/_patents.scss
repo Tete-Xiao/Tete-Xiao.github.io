@@ -18,8 +18,8 @@
 
 .pat-right {
   float:         left;
-  width: -webkit-calc(100% - (#{$spacing-unit} / 2));
-  width:         calc(100% - (#{$spacing-unit} / 2));
+  width: -webkit-calc(80% - (#{$spacing-unit} / 2));
+  width:         calc(80% - (#{$spacing-unit} / 2));
 }
 
 .pat-right > .title {
