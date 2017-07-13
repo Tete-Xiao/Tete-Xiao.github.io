@@ -7,7 +7,7 @@
   status:         '(In submission)'
   patent_number:  'CN*'
   place:          'China'
-  
+
 - title: 'A Multi Step System for Fast and Efficient Face Detection'
   date:  'July. 2017'
   selected: true
@@ -17,8 +17,8 @@
   status:         '(In submission)'
   patent_number:  'CN*'
   place:          'China'
-
-- title: 'A Framework and Device for Pedestrian Detection'
+  
+- title: 'A Framework and Device for Object Detection; A Framework and Device for Training Neural Network'
   date:  'Nov. 2016'
   selected: true
   authors:
@@ -27,8 +27,8 @@
     - name: J. Mao
       url:  ''
   status:         '(In process)'
-  patent_number:  'CN201710064338.7'
-  place:          'China'
+  patent_number:  'CN201611161693.8'
+  place:          'U.S. and China'
 
 - title: 'A Framework and Device for Object Detection; A Framework and Device for Training Neural Network'
   date:  'Nov. 2016'
