@@ -11,7 +11,6 @@
 }
 
 .pat {
-  border-top:     thin solid #c0c0c0;
   radius:         10px;
   float:          left !important;
   margin-top:     #{$spacing-unit};
@@ -41,11 +40,11 @@
 .pat-right > .info > .place {
   color:          $blue-color-dark;
   font-size:      16px;
+  font-weight:    800;
 }
 
 .pat-right > .info > .status {
   color:          $red-color-dark;
-  font-weight:    800;
   font-size:      16px;
 }
 
