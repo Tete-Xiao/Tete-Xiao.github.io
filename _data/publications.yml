@@ -1,6 +1,6 @@
 - title: 'What Can Help Pedestrian Detection?'
-  date:  'Nov. 2017'
-  imgurl: '/images/projects/2017/tete2017whatcanhelp.png'
+  date:  'July. 2017'
+  imgurl: '/images/projects/2017/tete2017_whatcanhelp.png'
   imgprop: 'frame'
   selected: true
   has_equal_contribution: true
@@ -23,4 +23,67 @@
     - name: 'arXiv'
       url:  'https://arxiv.org/abs/1705.02757'
     - name: 'pdf'
-      url:  '/pdf/tete2017whatcanhelp.pdf'
+      url:  '/pdf/tete2017_whatcanhelp.pdf'
+
+- title: 'Repulsion Loss: Detecting Pedestrians in a Crowd'
+  date:  'Nov. 2017'
+  imgurl: '/images/projects/2018/tete2018_repulsionloss.png'
+  imgprop: 'frame'
+  selected: true
+  has_equal_contribution: no
+  authors:
+    - name: X. Wang
+      url:  ''
+    - name: <strong>T. Xiao</strong>
+      url:  ''
+    - name: Y. Jiang
+      url:  ''
+    - name: S. Shao
+      url:  ''
+    - name: J. Sun
+      url:  ''    
+    - name: C. Shen
+      url:  ''
+  publisher:  'Arxiv'
+  status:   '(Tech Report)'
+  desc: 'Detecting individual pedestrians in a crowd remains a challenging problem. In this paper, we first explore how a state-of-the-art pedestrian detector is harmed by crowd occlusion via experimentation. Then, we propose a novel bounding box regression loss specifically designed for crowd scenes, termed repulsion loss. This loss is driven by two motivations: the attraction by target, and the repulsion by other surrounding objects. The repulsion term prevents the proposal from shifting to surrounding objects thus leading to more crowd-robust localization. Our detector trained by repulsion loss outperforms all the state-of-the-art methods with a significant improvement in occlusion cases.'
+  tags:
+    - name: 'arXiv'
+      url:  'https://arxiv.org/abs/1711.07752'
+    - name: 'pdf'
+      url:  '/pdf/tete2018_repulsionloss.pdf'
+
+- title: 'MegDet: A Large Mini-Batch Object Detector'
+  date:  'Nov. 2017'
+  imgurl: '/images/projects/2018/tete2018_megdet.png'
+  imgprop: 'frame'
+  selected: true
+  has_equal_contribution: true
+  authors:
+    - name: C. Peng
+      url:  ''
+      equal_contribution: true
+    - name: <strong>T. Xiao</strong>
+      url:  ''
+      equal_contribution: true
+    - name: Z. Li
+      url:  ''
+      equal_contribution: true
+    - name: Y. Jiang
+      url:  ''
+    - name: X. Zhang
+      url:  ''
+    - name: K. Jia
+      url:  ''
+    - name: G. Yu
+      url:  ''
+    - name: J. Sun
+      url:  ''
+  publisher:  'Arxiv'
+  status:   '(Tech Report)'
+  desc: 'Mini-batch size, a key factor in the training, has not been well studied in previous works on object detection. In this paper, we propose a Large Mini-Batch Object Detector (MegDet) to enable the training with much larger mini-batch size than previous work (e.g. from 16 to 256), so that we are able to effectively utilize multiple GPUs (up to 128 in our experiments) to significantly shorten the training time. Our detectors are trained in much shorter time yet achieves better accuracy. The MegDet is the backbone of our submission (mmAP 52.5%) to COCO 2017 Challenge, where we won the 1st place of Detection task.'
+  tags:
+    - name: 'arXiv'
+      url:  'https://arxiv.org/abs/1711.07240'
+    - name: 'pdf'
+      url:  '/pdf/tete2018_megdet.pdf'
