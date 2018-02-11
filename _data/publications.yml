@@ -44,7 +44,7 @@
       url:  ''    
     - name: C. Shen
       url:  ''
-  publisher:  'Arxiv'
+  publisher:  'Arxiv 2017'
   status:   '(Tech Report)'
   desc: 'Detecting individual pedestrians in a crowd remains a challenging problem. In this paper, we first explore how a state-of-the-art pedestrian detector is harmed by crowd occlusion via experimentation. Then, we propose a novel bounding box regression loss specifically designed for crowd scenes, termed repulsion loss. This loss is driven by two motivations: the attraction by target, and the repulsion by other surrounding objects. The repulsion term prevents the proposal from shifting to surrounding objects thus leading to more crowd-robust localization. Our detector trained by repulsion loss outperforms all the state-of-the-art methods with a significant improvement in occlusion cases.'
   tags:
@@ -79,7 +79,7 @@
       url:  ''
     - name: J. Sun
       url:  ''
-  publisher:  'Arxiv'
+  publisher:  'Arxiv 2017'
   status:   '(Tech Report)'
   desc: 'Mini-batch size, a key factor in the training, has not been well studied in previous works on object detection. In this paper, we propose a Large Mini-Batch Object Detector (MegDet) to enable the training with much larger mini-batch size than previous work (e.g. from 16 to 256), so that we are able to effectively utilize multiple GPUs (up to 128 in our experiments) to significantly shorten the training time. Our detectors are trained in much shorter time yet achieves better accuracy. The MegDet is the backbone of our submission (mmAP 52.5%) to COCO 2017 Challenge, where we won the 1st place of Detection task.'
   tags:
