@@ -81,7 +81,7 @@
       url:  ''
   publisher:  'Arxiv 2017'
   status:   '(Tech Report)'
-  desc: 'Mini-batch size, a key factor in the training, has not been well studied in previous works on object detection. In this paper, we propose a Large Mini-Batch Object Detector (MegDet) to enable the training with much larger mini-batch size than previous work (e.g. from 16 to 256), so that we are able to effectively utilize multiple GPUs (up to 128 in our experiments) to significantly shorten the training time. Our detectors are trained in much shorter time yet achieves better accuracy. The MegDet is the backbone of our submission (mmAP 52.5%) to COCO 2017 Challenge, where we won the 1st place of Detection task.'
+  desc: 'Mini-batch size, a key factor in the training, has not been well studied in previous works on object detection. In this paper, we propose a Large Mini-Batch Object Detector (MegDet) to enable the training with much larger mini-batch size than previous work (i.e., from 16 to 256), so that we are able to effectively utilize multiple GPUs (up to 128 in our experiments) to significantly accelerate training procedure. Our detector is trained in much shorter time yet achieves better accuracy. The MegDet is the backbone of our submission (mmAP 52.5%) to COCO 2017 Challenge, where we won the 1st place of Detection task.'
   tags:
     - name: 'arXiv'
       url:  'https://arxiv.org/abs/1711.07240'
