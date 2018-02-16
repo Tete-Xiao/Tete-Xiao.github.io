@@ -11,8 +11,7 @@
 
 }
 .bio-body {
-  width:  calc(80% - (#{$spacing-unit} / 2));
   margin:     5px;
   padding:    5px;
-  word-wrap: break-word
+  word-wrap: break-word;
 }
