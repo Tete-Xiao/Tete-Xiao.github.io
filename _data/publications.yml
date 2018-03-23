@@ -1,3 +1,85 @@
+- title: 'Unified Perceptual Parsing for Scene Understanding'
+  date:  'Mar. 2018'
+  imgurl: '/images/projects/2018/tete2018_upp.png'
+  imgprop: 'frame'
+  selected: true
+  has_equal_contribution: true
+  authors:
+    - name: <strong>T. Xiao</strong>
+      url:  'tetexiao.com'
+      equal_contribution: true
+    - name: Y. Liu
+      url:  ''
+      equal_contribution: true
+    - name: B. Zhou
+      url:  'people.csail.mit.edu/bzhou'
+      equal_contribution: true
+    - name: Y. Jiang
+      url:  'yuningjiang.github.io'
+    - name: J. Sun
+      url:  'www.jiansun.org'
+  publisher:  'Tech Report'
+  status:   '(under review of ECCV2018)'
+  desc: 'Human visual perception is not a standalone function at one level of recognition: we understand visual scenes effortlessly at multiple levels, from recognizing the scene category to the objects with, and from identifying the textures of objects to their different compositional parts. In this work, we study a new task called Unified Perceptual Parsing, which requires the vision systems to recognize as many visual concepts as possible from a given image. A new multi-task framework called UPerNet and a training strategy are developed to learn from heterogeneous image annotations. We benchmark our framework on the task of the Unified Perceptual Parsing and show that it is able to effectively segment a wide range of concepts from the given image. We further apply the trained networks to discover the visual knowledge among natural scenes. '
+  tags:
+    - name: 'Paper and codes comming soon!'
+      url:  'tetexiao.com'
+
+- title: 'Acquisition of Localization Confidence for Accurate Object Detection'
+  date:  'Mar. 2018'
+  imgurl: '/images/projects/2018/tete2018_iounet.png'
+  imgprop: 'frame'
+  selected: true
+  has_equal_contribution: true
+  authors:
+    - name: R. Luo
+      url:  ''
+      equal_contribution: true
+    - name: B. Jiang
+      url:  ''
+      equal_contribution: true
+    - name: J. Mao
+      url:  'vccy.xyz'
+    - name: <strong>T. Xiao</strong>
+      url:  'tetexiao.com'
+    - name: Y. Jiang
+      url:  'yuningjiang.github.io'
+    - name: J. Sun
+      url:  'www.jiansun.org'
+  publisher:  'Tech Report'
+  status:   '(under review of ECCV2018)'
+  desc: 'Modern CNN-based object detectors rely on bounding box regression and non-maximum suppression (NMS) to localize objects. While the probabilities for class labels naturally reflect classification confidence, localization confidence is absent. This makes properly localized bounding boxes degenerate during iterative regression or even suppressed during NMS. We propose IoU-Net learning to predict the IoU between each detected bounding box and the matched ground-truth. The network acquires this confidence of localization, which improves NMS procedure by preserving accurately localized bounding boxes. Furthermore, formulating the predicted IoU as an optimization objective provides monotonic improvement in bounding box localization. Extensive experiments on the MS-COCO dataset show the advance of IoU-Net and its compatibility and adaptivity to several state-of-the-art object detectors.'
+  tags:
+    - name: 'Paper comming soon!'
+      url:  'tetexiao.com'
+
+- title: 'Anonymous Submission'
+  date:  'Mar. 2018'
+  imgurl: '/images/projects/2018/tete2018_vge.png'
+  imgprop: 'frame'
+  selected: true
+  has_equal_contribution: true
+  authors:
+    - name: H. Shi
+      url:  'explorerfreda.github.io'
+      equal_contribution: true
+    - name: J. Mao
+      url:  'vccy.xyz'
+      equal_contribution: true
+    - name: <strong>T. Xiao</strong>
+      url:  'tetexiao.com'
+      equal_contribution: true
+    - name: Y. Jiang
+      url:  'yuningjiang.github.io'
+    - name: J. Sun
+      url:  'www.jiansun.org'
+  publisher:  'Tech Report'
+  status:   '(under review of COLING 2018)'
+  desc: 'Comming soon!'
+  tags:
+    - name: 'Paper and codes comming soon!'
+      url:  'tetexiao.com'
+
 
 - title: 'MegDet: A Large Mini-Batch Object Detector'
   date:  'Nov. 2017'
