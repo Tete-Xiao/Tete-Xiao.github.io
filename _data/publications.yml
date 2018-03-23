@@ -22,7 +22,7 @@
   status:   '(under review of ECCV2018)'
   desc: 'Human visual perception is not a standalone function at one level of recognition: we understand visual scenes effortlessly at multiple levels, from recognizing the scene category to the objects with, and from identifying the textures of objects to their different compositional parts. In this work, we study a new task called Unified Perceptual Parsing, which requires the vision systems to recognize as many visual concepts as possible from a given image. A new multi-task framework called UPerNet and a training strategy are developed to learn from heterogeneous image annotations. We benchmark our framework on the task of the Unified Perceptual Parsing and show that it is able to effectively segment a wide range of concepts from the given image. We further apply the trained networks to discover the visual knowledge among natural scenes. '
   tags:
-    - name: 'Paper and codes comming soon!'
+    - name: 'Paper and codes coming soon!'
       url:  'tetexiao.com'
 
 
@@ -51,7 +51,7 @@
   status: '(under review of ECCV2018)'
   desc: 'Modern CNN-based object detectors rely on bounding box regression and non-maximum suppression (NMS) to localize objects. While the probabilities for class labels naturally reflect classification confidence, localization confidence is absent. This makes properly localized bounding boxes degenerate during iterative regression or even suppressed during NMS. We propose IoU-Net learning to predict the IoU between each detected bounding box and the matched ground-truth. The network acquires this confidence of localization, which improves NMS procedure by preserving accurately localized bounding boxes. Furthermore, formulating the predicted IoU as an optimization objective provides monotonic improvement in bounding box localization. Extensive experiments on the MS-COCO dataset show the advance of IoU-Net and its compatibility and adaptivity to several state-of-the-art object detectors.'
   tags:
-    - name: 'Paper comming soon!'
+    - name: 'Paper coming soon!'
       url:  'tetexiao.com'
 
 
@@ -79,7 +79,7 @@
   status:   '(under review of COLING18)'
   desc: 'Coming soon! &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp'
   tags:
-    - name: 'Paper and codes comming soon!'
+    - name: 'Paper and codes coming soon!'
       url:  'tetexiao.com'
 
 
