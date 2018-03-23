@@ -57,7 +57,7 @@
 
 - title: 'Anonymous Submission'
   date:  'Mar. 2018'
-  imgurl: '/images/projects/2018/tete2018_iounet.png'
+  imgurl: '/images/projects/2018/tete2018_vge.png'
   imgprop: 'frame'
   selected: true
   has_equal_contribution: true
@@ -76,8 +76,8 @@
     - name: J. Sun
       url:  'http://www.jiansun.org/'
   publisher:  'Tech Report'
-  status:   '(under review of ECCV2018)'
-  desc: 'Human visual perception is not a standalone function at one level of recognition: we understand visual scenes effortlessly at multiple levels, from recognizing the scene category to the objects with, and from identifying the textures of objects to their different compositional parts. In this work, we study a new task called Unified Perceptual Parsing, which requires the vision systems to recognize as many visual concepts as possible from a given image. A new multi-task framework called UPerNet and a training strategy are developed to learn from heterogeneous image annotations. We benchmark our framework on the task of the Unified Perceptual Parsing and show that it is able to effectively segment a wide range of concepts from the given image. We further apply the trained networks to discover the visual knowledge among natural scenes. '
+  status:   '(under review of COLING18)'
+  desc: 'Coming soon! &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp'
   tags:
     - name: 'Paper and codes comming soon!'
       url:  'tetexiao.com'
