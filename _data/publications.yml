@@ -12,7 +12,7 @@
       url:  ''
       equal_contribution: true
     - name: B. Zhou
-      url:  'people.csail.mit.edu/bzhou'
+      url:  'https://people.csail.mit.edu/bzhou'
       equal_contribution: true
     - name: Y. Jiang
       url:  'yuningjiang.github.io'
@@ -55,7 +55,7 @@
 
 - title: 'Anonymous Submission'
   date:  'Mar. 2018'
-  imgurl: '/images/projects/2018/tete2018_vge.jpg'
+  imgurl: '/images/projects/2018/tete2018_vge.png'
   imgprop: 'frame'
   selected: true
   has_equal_contribution: true
