@@ -56,7 +56,7 @@
       url:  ''
   publisher:  'CVPR 2018'
   place: 'in Salt Lake City, Utah'
-  desc: 'Detecting individual pedestrians in a crowd remains a challenging problem. In this paper, we first explore how a state-of-the-art pedestrian detector is harmed by crowd occlusion via experimentation. Then, we propose a novel bounding box regression loss specifically designed for crowd scenes, termed repulsion loss. This loss is driven by two motivations: the attraction by target, and the repulsion by other surrounding objects. The repulsion term prevents the proposal from shifting to surrounding objects thus leading to more crowd-robust localization. Our detector trained by repulsion loss outperforms all the state-of-the-art methods with a significant improvement in occlusion cases.'
+  desc: 'Detecting individual pedestrians in a crowd remains a challenging problem. In this paper, we explore how a state-of-the-art pedestrian detector is harmed by crowd occlusion and propose a novel crowd-robust regression loss specifically designed for crowd scenes. This loss is driven by two motivations: the attraction by target, and the repulsion by other surrounding objects. Our detector trained by repulsion loss outperforms all the state-of-the-art methods with a significant improvement in occlusion cases.'
   tags:
     - name: 'arXiv'
       url:  'https://arxiv.org/abs/1711.07752'
@@ -82,7 +82,7 @@
       url:  ''
   publisher:  'CVPR 2017'
   place:    'in Honolulu, Hawaii'
-  desc: 'Aggregating extra features has been considered as an effective approach to boost traditional pedestrian detection methods. The first contribution of this paper is exploring this issue by aggregating extra features into CNN-based pedestrian detection framework. We evaluate the effects of different kinds of extra features quantitatively. Moreover, we propose a novel network architecture, namely HyperLearner, to jointly learn pedestrian detection as well as the given extra feature. By multi-task training, HyperLearner is able to utilize the information of given features and improve detection performance without extra inputs in inference.'
+  desc: 'Aggregating extra features has been considered as an effective approach to boost traditional pedestrian detection methods. The first contribution of this paper is exploring this in CNN-based pedestrian detection frameworks by evaluating the effects of different kinds of extra features quantitatively. Moreover, we propose a novel network architecture to jointly learn pedestrian detection as well as the given extra feature. By multi-task training, HyperLearner is able to utilize the information of given features and improve detection performance without extra inputs in inference.'
   tags:
     - name: 'arXiv'
       url:  'https://arxiv.org/abs/1705.02757'
