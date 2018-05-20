@@ -76,6 +76,7 @@
     - name: J. Sun
       url:  'http://www.jiansun.org/'
   publisher:  'COLING2018'
+  place:    'in Santa Fe, New Mexico'
   desc: 'Human language emerges with grounded semantics, within which a large proportion of words are visually-grounded. Despite the great success brought by large-scale textual embedding learning, how to efficiently ground texts especially w.r.t. visual domain receives little attention. Begin with an insightful adversarial attack on concurrent VSE embeddings, we show the limitation of current datasets and frameworks both quantitatively and qualitatively. The large gap between constitutions of real-world visual semantics and size of image-text parallel data, to a large extent, restricts the model to build a strong link between textual semantics and visual concepts. We alleviate this problem by augmenting the MS-COCO image captioning datasets with contrastive textual adversarial samples. The samples are synthesized with language prior of humans and WordNet knowledge base, and enforce the model to ground learned embeddings to concrete concepts within the image. This simple but powerful strategy brings a noticeable improvement over the baselines on a diverse set of tasks, in addition to defending known-type adversarial attacks.'
   tags:
     - name: 'arXiv'
