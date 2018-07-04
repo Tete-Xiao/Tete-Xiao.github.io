@@ -18,8 +18,8 @@
       url:  'https://yuningjiang.github.io/'
     - name: J. Sun
       url:  'http://www.jiansun.org/'
-  publisher:  'Tech Report'
-  status:   '(under review of ECCV2018)'
+  publisher:  'ECCV2018'
+  place:    'in München, Germany'
   desc: 'Human visual perception is not a standalone function at one level of recognition: we understand visual scenes effortlessly at multiple levels, from recognizing the scene category to the objects with, and from identifying the textures of objects to their different compositional parts. In this work, we study a new task called Unified Perceptual Parsing, which requires the vision systems to recognize as many visual concepts as possible from a given image. A new multi-task framework called UPerNet and a training strategy are developed to learn from heterogeneous image annotations. We benchmark our framework on the task of the Unified Perceptual Parsing and show that it is able to effectively segment a wide range of concepts from the given image. We further apply the trained networks to discover the visual knowledge among natural scenes. '
   tags:
     - name: 'Paper and codes coming soon!'
@@ -47,8 +47,8 @@
       url:  'https://yuningjiang.github.io/'
     - name: J. Sun
       url:  'http://www.jiansun.org/'
-  publisher: 'Tech Report'
-  status: '(under review of ECCV2018)'
+  publisher: 'ECCV2018'
+  place:    'in München, Germany'
   desc: 'Modern CNN-based object detectors rely on bounding box regression and non-maximum suppression (NMS) to localize objects. While the probabilities for class labels naturally reflect classification confidence, localization confidence is absent. This makes properly localized bounding boxes degenerate during iterative regression or even suppressed during NMS. We propose IoU-Net learning to predict the IoU between each detected bounding box and the matched ground-truth. The network acquires this confidence of localization, which improves NMS procedure by preserving accurately localized bounding boxes. Furthermore, formulating the predicted IoU as an optimization objective provides monotonic improvement in bounding box localization. Extensive experiments on the MS-COCO dataset show the advance of IoU-Net and its compatibility and adaptivity to several state-of-the-art object detectors.'
   tags:
     - name: 'Paper coming soon!'
@@ -77,7 +77,7 @@
       url:  'http://www.jiansun.org/'
   publisher:  'COLING 2018'
   place:    'in Santa Fe, New Mexico'
-  desc: 'Human language emerges with grounded semantics, within which a large proportion of words are visually-grounded. Despite the great success brought by large-scale textual embedding learning, how to efficiently ground texts especially w.r.t. visual domain receives little attention. Begin with an insightful adversarial attack on concurrent VSE embeddings, we show the limitation of current datasets and frameworks both quantitatively and qualitatively. The large gap between constitutions of real-world visual semantics and size of image-text parallel data, to a large extent, restricts the model to build a strong link between textual semantics and visual concepts. We alleviate this problem by augmenting the MS-COCO image captioning datasets with contrastive textual adversarial samples. The samples are synthesized with language prior of humans and WordNet knowledge base, and enforce the model to ground learned embeddings to concrete concepts within the image. This simple but powerful strategy brings a noticeable improvement over the baselines on a diverse set of tasks, in addition to defending known-type adversarial attacks.'
+  desc: 'We study the problem of grounding distributional representations of texts on the visual domain, namely visual-semantic embeddings (VSE for short). Begin with an insightful adversarial attack on VSE embeddings, we show the limitation of current frameworks and image-text datasets (e.g., MS-COCO). We show that the model is restricted to establish the link between textual semantics and visual concepts. We alleviate this problem by augmenting the MS-COCO image captioning datasets with synthesized textual contrastive adversarial samples. The samples enforce the model to ground learned embeddings to concrete concepts within the image. This simple but powerful technique brings a noticeable improvement over the baselines on a diverse set of downstream tasks, in addition to defending known-type adversarial attacks.'
   tags:
     - name: 'arXiv'
       url:  'https://arxiv.org/abs/1806.10348'
