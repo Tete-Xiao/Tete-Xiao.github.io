@@ -49,6 +49,7 @@
       url:  'http://www.jiansun.org/'
   publisher: 'ECCV2018'
   place:    'in München, Germany'
+  status:   '(Oral)'
   desc: 'Modern CNN-based object detectors rely on bounding box regression and non-maximum suppression (NMS) to localize objects. While the probabilities for class labels naturally reflect classification confidence, localization confidence is absent. This makes properly localized bounding boxes degenerate during iterative regression or even suppressed during NMS. We propose IoU-Net learning to predict the IoU between each detected bounding box and the matched ground-truth. The network acquires this confidence of localization, which improves NMS procedure by preserving accurately localized bounding boxes. Furthermore, formulating the predicted IoU as an optimization objective provides monotonic improvement in bounding box localization. Extensive experiments on the MS-COCO dataset show the advance of IoU-Net and its compatibility and adaptivity to several state-of-the-art object detectors.'
   tags:
     - name: 'Paper coming soon!'
