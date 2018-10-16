@@ -19,7 +19,8 @@
     - name: A. Torralba
       url:  'http://web.mit.edu/torralba/www/'
   publisher:  'IJCV'
-  place:    '(Springer)'
+  status:   '(in submission)'
+  place:    'Springer'
   desc: 'We present a densely annotated dataset ADE20K, which spans diverse annotations of scenes, objects, parts of objects, and in some cases even parts of parts. Totally there are 25k images of the complex everyday scenes containing a variety of objects in their natural spatial context. We construct benchmarks for scene parsing and instance segmentation. We provide baseline performances on both of the benchmarks and re-implement the state-of- the-art models for open source. We further evaluate the effect of synchronized batch normalization and find that a reasonably large batch size is crucial for the semantic segmentation performance. We show that the networks trained on ADE20K is able to segment a wide variety of scenes and objects.'
   tags:
     - name: 'arXiv (soon)'
