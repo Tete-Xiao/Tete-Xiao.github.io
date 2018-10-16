@@ -30,7 +30,7 @@
     - name: 'project'
       url:  'http://sceneparsing.csail.mit.edu/'
 
- title: 'Unified Perceptual Parsing for Scene Understanding'
+- title: 'Unified Perceptual Parsing for Scene Understanding'
   date:  'Mar. 2018'
   imgurl: '/images/projects/2018/tete2018_upp.png'
   imgprop: 'frame'
