@@ -1,4 +1,36 @@
-- title: 'Unified Perceptual Parsing for Scene Understanding'
+- title: 'Semantic Understanding of Scenes through the ADE20K Dataset'
+  date:  'Oct. 2018'
+  imgurl: '/images/projects/2018/tete2018_ade20k_ijcv.png'
+  imgprop: 'frame'
+  selected: true
+  has_equal_contribution: true
+  authors:
+    - name: B. Zhou
+      url:  'https://people.csail.mit.edu/bzhou'
+    - name: H. Zhao
+      url:  'http://www.mit.edu/~hangzhao/'
+    - name: X. Puig
+      url:  'https://people.csail.mit.edu/xavierpuig/'
+    - name: <strong>T. Xiao</strong>
+      url:  'http://tetexiao.com'
+    - name: S. Fidler
+      url:  'https://www.cs.utoronto.ca/~fidler/'
+    - name: A. Barriuso
+      url:  ''
+    - name: A. Torralba
+      url:  'http://web.mit.edu/torralba/www/'
+  publisher:  'IJCV'
+  place:    '(Springer)'
+  desc: 'We present a densely annotated dataset ADE20K, which spans diverse annotations of scenes, objects, parts of objects, and in some cases even parts of parts. Totally there are 25k images of the complex everyday scenes containing a variety of objects in their natural spatial context. We construct benchmarks for scene parsing and instance segmentation. We provide baseline performances on both of the benchmarks and re-implement the state-of- the-art models for open source. We further evaluate the effect of synchronized batch normalization and find that a reasonably large batch size is crucial for the semantic segmentation performance. We show that the networks trained on ADE20K is able to segment a wide variety of scenes and objects.'
+  tags:
+    - name: 'arXiv (soon)'
+      url:  ''
+    - name: 'pdf'
+      url:  '/pdf/tete2018_ade20k_ijcv.pdf'
+    - name: 'project'
+      url:  'http://sceneparsing.csail.mit.edu/'
+
+ title: 'Unified Perceptual Parsing for Scene Understanding'
   date:  'Mar. 2018'
   imgurl: '/images/projects/2018/tete2018_upp.png'
   imgprop: 'frame'
