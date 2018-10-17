@@ -28,7 +28,7 @@
     - name: 'pdf'
       url:  '/pdf/tete2018_ade20k_ijcv.pdf'
     - name: 'project'
-      url:  'http://sceneparsing.csail.mit.edu/'
+      url:  'http://groups.csail.mit.edu/vision/datasets/ADE20K/'
 
 - title: 'Unified Perceptual Parsing for Scene Understanding'
   date:  'Mar. 2018'
