@@ -4,18 +4,18 @@
   authors:
     - name: <strong>T. Xiao</strong>
       url:  ''
-  status:         '(In submission)'
-  patent_number:  'CN*'
+  status:         '(In process)'
+  patent_number:  'CN201711161464'
   place:          'China'
 
-- title: 'A Multi Step System for Fast and Efficient Face Detection'
+- title: 'A Multi-step System for Fast and Efficient Face Detection'
   date:  'July. 2017'
   selected: true
   authors:
     - name: <strong>T. Xiao</strong>
       url:  ''
-  status:         '(In submission)'
-  patent_number:  'CN*'
+  status:         '(In process)'
+  patent_number:  'CN201710855131'
   place:          'China'
 
 - title: 'A Framework and Device for Object Detection; A Framework and Device for Training Neural Network'
@@ -25,9 +25,9 @@
     - name: <strong>T. Xiao</strong>
       url:  ''
     - name: J. Mao
-      url:  ''
+      url:  'http://vccy.xyz/'
   status:         '(In process)'
-  patent_number:  'CN201611161693.8'
+  patent_number:  'US15814125/CN201611161693'
   place:          'U.S. and China'
 
 - title: 'A Framework and Device for Pedestrian Detection'
@@ -37,19 +37,19 @@
     - name: <strong>T. Xiao</strong>
       url:  ''
     - name: J. Mao
-      url:  ''
+      url:  'http://vccy.xyz/'
   status:         '(In process)'
   patent_number:  'CN201710064338.7'
   place:          'China'
 
-- title: 'A Framework and Device for Large Training Data Collection'
+- title: 'A Framework and Device for Collecting Large-scale Training Data'
   date:  'Oct. 2016'
   selected: true
   authors:
     - name: <strong>T. Xiao</strong>
       url:  ''
     - name: J. Mao
-      url:  ''
+      url:  'http://vccy.xyz/'
   status:         '(In process)'
   patent_number:  'CN201611010103.1'
   place:          'China'
