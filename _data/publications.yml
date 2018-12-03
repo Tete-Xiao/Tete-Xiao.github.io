@@ -20,7 +20,7 @@
       url:  'http://web.mit.edu/torralba/www/'
   publisher:  'IJCV'
   place:    'Springer'
-  desc: 'We present a densely annotated dataset ADE20K, which spans diverse annotations of scenes, objects, parts of objects, and in some cases even parts of parts. Totally there are 25k images of the complex everyday scenes containing a variety of objects in their natural spatial context. We construct benchmarks for scene parsing and instance segmentation. We provide baseline performances on both of the benchmarks and re-implement the state-of- the-art models for open source. We further evaluate the effect of synchronized batch normalization and find that a reasonably large batch size is crucial for the semantic segmentation performance. We show that the networks trained on ADE20K is able to segment a wide variety of scenes and objects.'
+  desc: 'We present a densely annotated dataset ADE20K, which spans diverse annotations of scenes, objects, parts of objects, and in some cases even parts of parts. Totally there are 25k images of the complex everyday scenes containing a variety of objects in their natural spatial context. We construct benchmarks for scene parsing and instance segmentation. We provide baseline performances on both of the benchmarks and re-implement the state-of-the-art models for open source. We further evaluate the effect of synchronized batch normalization and find that a reasonably large batch size is crucial for the semantic segmentation performance. We show that the networks trained on ADE20K is able to segment a wide variety of scenes and objects.'
   tags:
     - name: 'arXiv'
       url:  'https://arxiv.org/abs/1608.05442'
@@ -55,7 +55,7 @@
       url:  'http://www.jiansun.org/'
   publisher:  'ECCV2018'
   place:    'in München, Germany'
-  desc: 'Humans recognize the visual world at multiple levels: we effortlessly categorize scenes and detect objects inside, while also identi- fying the textures and surfaces of the objects along with their different compositional parts. In this paper, we study a new task called Unified Perceptual Parsing, which requires the machine vision systems to recog- nize as many visual concepts as possible from a given image. A multi-task framework called UPerNet and a training strategy are developed to learn from heterogeneous image annotations. We benchmark our framework on Unified Perceptual Parsing and show that it is able to effectively segment a wide range of concepts from images. The trained networks are further applied to discover visual knowledge in natural scenes.'
+  desc: 'Humans recognize the visual world at multiple levels: we effortlessly categorize scenes and detect objects inside, while also identifying the textures and surfaces of the objects along with their different compositional parts. In this paper, we study a new task called Unified Perceptual Parsing, which requires the machine vision systems to recognize as many visual concepts as possible from a given image. A multi-task framework called UPerNet and a training strategy are developed to learn from heterogeneous image annotations. We benchmark our framework on Unified Perceptual Parsing and show that it is able to effectively segment a wide range of concepts from images. The trained networks are further applied to discover visual knowledge in natural scenes.'
   tags:
     - name: 'arXiv'
       url:  'https://arxiv.org/abs/1807.10221'
