@@ -1,37 +1,68 @@
+- title: 'Reasoning About Human-Object Interactions Through Dual Attention Networks'
+  date:  'Aug. 2019'
+  imgurl: '/images/projects/2019/tete2019_att.png'
+  imgprop: 'frame'
+  selected: true
+  authors:
+    - name: <strong>Tete Xiao</strong>
+      url:  'http://tetexiao.com'
+    - name: Quanfu Fan
+      url:  'https://researcher.watson.ibm.com/researcher/view.php?person=us-qfan'
+    - name: Dan Gutfreund
+      url:  'https://researcher.watson.ibm.com/researcher/view.php?person=us-dgutfre'
+    - name: Mathew Monfort
+      url:  'http://people.csail.mit.edu/mmonfort/'
+    - name: Aude Oliva
+      url:  'http://cvcl.mit.edu/audeoliva.html'
+    - name: Bolei Zhou
+      url:  'http://bzhou.ie.cuhk.edu.hk/'
+  publisher:  'ICCV2019'
+  place:    'in Seoul, South Korea'
+  desc: 'Objects are entities we act upon, where the functionality of an object is determined by how we interact with it. We propose a Dual Attention Network model which reasons about human-object interactions. The recognition of objects and actions mutually benefit each other. It can also perform weak spatiotemporal localization and affordance segmentation, despite being trained only with video-level labels. The model not only finds when an action is happening and which object is being manipulated, but also identifies which part of the object is being interacted with.'
+  tags:
+    - name: 'arXiv'
+      url:  'https://tetexiao.com'
+    - name: 'pdf'
+      url:  '/pdf/tete2019_att.pdf'
+    - name: 'project page'
+      url:  'https://dual-attention-network.github.io/'
+
 - title: 'Semantic Understanding of Scenes through the ADE20K Dataset'
   date:  'Oct. 2018'
   imgurl: '/images/projects/2018/tete2018_ade20k_ijcv.png'
   imgprop: 'frame'
   selected: true
   authors:
-    - name: B. Zhou
+    - name: Bolei Zhou
       url:  'https://people.csail.mit.edu/bzhou'
-    - name: H. Zhao
+    - name: Hang Zhao
       url:  'http://www.mit.edu/~hangzhao/'
-    - name: X. Puig
+    - name: Xavier Puig
       url:  'https://people.csail.mit.edu/xavierpuig/'
     - name: <strong>T. Xiao</strong>
       url:  'http://tetexiao.com'
-    - name: S. Fidler
+    - name: Sanja Fidler
       url:  'https://www.cs.utoronto.ca/~fidler/'
-    - name: A. Barriuso
+    - name: Adela Barriuso
       url:  ''
-    - name: A. Torralba
+    - name: Antonio Torralba
       url:  'http://web.mit.edu/torralba/www/'
   publisher:  'IJCV'
   place:    'Springer'
-  desc: 'We present a densely annotated dataset ADE20K, which spans diverse annotations of scenes, objects, parts of objects, and in some cases even parts of parts. Totally there are 25k images of the complex everyday scenes containing a variety of objects in their natural spatial context. We construct benchmarks for scene parsing and instance segmentation. We provide baseline performances on both of the benchmarks and re-implement the state-of-the-art models for open source. We further evaluate the effect of synchronized batch normalization and find that a reasonably large batch size is crucial for the semantic segmentation performance. We show that the networks trained on ADE20K is able to segment a wide variety of scenes and objects.'
+  desc: 'We present a densely annotated dataset ADE20K, which spans diverse annotations of scenes, objects, parts of objects, and in some cases even parts of parts. We construct benchmarks for scene parsing and instance segmentation. We provide baseline performances on both of the benchmarks and re-implement the state-of-the-art models for open source. We further evaluate the effect of synchronized batch normalization and find that a reasonably large batch size is crucial for the semantic segmentation performance. We show that the networks trained on ADE20K is able to segment a wide variety of scenes and objects.'
   tags:
     - name: 'article'
       url:  'https://link.springer.com/article/10.1007/s11263-018-1140-0'
     - name: 'pdf'
       url:  '/pdf/tete2018_ade20k_ijcv.pdf'
-    - name: 'project'
+    - name: 'dataset'
       url:  'http://groups.csail.mit.edu/vision/datasets/ADE20K/'
     - name: 'models'
       url:  'https://github.com/CSAILVision/semantic-segmentation-pytorch'
     - name: 'benchmark'
       url:  'http://sceneparsing.csail.mit.edu/'
+    - name: 'demo'
+      url:  'http://scenesegmentation.csail.mit.edu/'
 
 - title: 'Unified Perceptual Parsing for Scene Understanding'
   date:  'Mar. 2018'
@@ -40,22 +71,22 @@
   selected: true
   has_equal_contribution: true
   authors:
-    - name: <strong>T. Xiao</strong>
+    - name: <strong>Tete Xiao</strong>
       url:  'http://tetexiao.com'
       equal_contribution: true
-    - name: Y. Liu
-      url:  ''
+    - name: Yingcheng Liu
+      url:  'https://scholar.google.com/citations?user=TIbJx30AAAAJ&hl=en'
       equal_contribution: true
-    - name: B. Zhou
+    - name: Bolei Zhou
       url:  'https://people.csail.mit.edu/bzhou'
       equal_contribution: true
-    - name: Y. Jiang
+    - name: Yuning Jiang
       url:  'https://yuningjiang.github.io/'
-    - name: J. Sun
+    - name: Jian Sun
       url:  'http://www.jiansun.org/'
   publisher:  'ECCV2018'
   place:    'in München, Germany'
-  desc: 'Humans recognize the visual world at multiple levels: we effortlessly categorize scenes and detect objects inside, while also identifying the textures and surfaces of the objects along with their different compositional parts. In this paper, we study a new task called Unified Perceptual Parsing, which requires the machine vision systems to recognize as many visual concepts as possible from a given image. A multi-task framework called UPerNet and a training strategy are developed to learn from heterogeneous image annotations. We benchmark our framework on Unified Perceptual Parsing and show that it is able to effectively segment a wide range of concepts from images. The trained networks are further applied to discover visual knowledge in natural scenes.'
+  desc: 'In this paper, we study a new task called Unified Perceptual Parsing, which requires the machine vision systems to recognize as many visual concepts as possible from a given image. A multi-task framework called UPerNet and a training strategy are developed to learn from heterogeneous image annotations. We show that the network is able to effectively segment a wide range of concepts from images. It is further applied to discover visual knowledge in natural scenes.'
   tags:
     - name: 'arXiv'
       url:  'https://arxiv.org/abs/1807.10221'
@@ -70,26 +101,27 @@
   imgurl: '/images/projects/2018/tete2018_iounet.png'
   imgprop: 'frame'
   selected: true
-  has_equal_contribution: true
+  has_equal_contribution: false
   authors:
-    - name: R. Luo
+    - name: Ruixuan Luo
       url:  ''
       equal_contribution: true
-    - name: B. Jiang
+    - name: Borui Jiang
       url:  ''
       equal_contribution: true
-    - name: J. Mao
+    - name: Jiayuan Mao
       url:  'http://vccy.xyz/'
-    - name: <strong>T. Xiao</strong>
+      equal_contribution: true
+    - name: <strong>Tete Xiao</strong>
       url:  'http://tetexiao.com'
-    - name: Y. Jiang
+    - name: Yuning Jiang
       url:  'https://yuningjiang.github.io/'
-    - name: J. Sun
+    - name: Jian Sun
       url:  'http://www.jiansun.org/'
   publisher: 'ECCV2018'
   place:    'in München, Germany'
   status:   '(Oral)'
-  desc: 'Modern CNN-based object detectors rely on bounding box regression and non-maximum suppression (NMS) to localize objects. While the probabilities for class labels naturally reflect classification confidence, localization confidence is absent. This makes properly localized bounding boxes degenerate during iterative regression or even suppressed during NMS. We propose IoU-Net learning to predict the IoU between each detected bounding box and the matched ground-truth. The network acquires this confidence of localization, which improves NMS procedure by preserving accurately localized bounding boxes. Furthermore, formulating the predicted IoU as an optimization objective provides monotonic improvement in bounding box localization. Extensive experiments on the MS-COCO dataset show the advance of IoU-Net and its compatibility and adaptivity to several state-of-the-art object detectors.'
+  desc: 'Modern CNN-based object detectors rely on bounding box regression and non-maximum suppression (NMS) to localize objects. While the probabilities for class labels naturally reflect classification confidence, localization confidence is absent. We propose IoU-Net learning to predict the IoU between each detected bounding box and the matched ground-truth. Furthermore, we formulate the predicted IoU as an optimization objective and propose an operator to enable the optimization via gradient descent.'
   tags:
     - name: 'arXiv'
       url:  'https://arxiv.org/abs/1807.11590'
@@ -104,22 +136,22 @@
   selected: true
   has_equal_contribution: true
   authors:
-    - name: H. Shi
+    - name: Haoyue Shi
       url:  'https://explorerfreda.github.io/'
       equal_contribution: true
-    - name: J. Mao
+    - name: Jiayuan Mao
       url:  'http://vccy.xyz/'
       equal_contribution: true
-    - name: <strong>T. Xiao</strong>
+    - name: <strong>Tete Xiao</strong>
       url:  'http://tetexiao.com'
       equal_contribution: true
-    - name: Y. Jiang
+    - name: Yuning Jiang
       url:  'https://yuningjiang.github.io'
-    - name: J. Sun
+    - name: Jian Sun
       url:  'http://www.jiansun.org/'
   publisher:  'COLING 2018'
   place:    'in Santa Fe, New Mexico'
-  desc: 'We study the problem of grounding distributional representations of texts on the visual domain, namely visual-semantic embeddings (VSE for short). Begin with an insightful adversarial attack on VSE embeddings, we show the limitation of current frameworks and image-text datasets (e.g., MS-COCO). We show that the model is restricted to establish the link between textual semantics and visual concepts. We alleviate this problem by augmenting the MS-COCO image captioning datasets with synthesized textual contrastive adversarial samples. The samples enforce the model to ground learned embeddings to concrete concepts within the image. This simple but powerful technique brings a noticeable improvement over the baselines on a diverse set of downstream tasks, in addition to defending known-type adversarial attacks.'
+  desc: 'We study the problem of grounding distributional representations of texts on the visual domain, namely visual-semantic embeddings (VSE for short). We show that previous model is restricted to establish the link between textual semantics and visual concepts by adversarial attacking. We alleviate this problem by augmenting the MS-COCO image captioning datasets with synthesized textual contrastive adversarial samples.'
   tags:
     - name: 'arXiv'
       url:  'https://arxiv.org/abs/1806.10348'
@@ -136,29 +168,29 @@
   selected: true
   has_equal_contribution: true
   authors:
-    - name: C. Peng
+    - name: Chao Peng
       url:  ''
       equal_contribution: true
-    - name: <strong>T. Xiao</strong>
+    - name: <strong>Tete Xiao</strong>
       url:  'http://tetexiao.com'
       equal_contribution: true
-    - name: Z. Li
+    - name: Zeming Li
       url:  ''
       equal_contribution: true
-    - name: Y. Jiang
+    - name: Yuning Jiang
       url:  'https://yuningjiang.github.io/'
-    - name: X. Zhang
+    - name: Xiangyu Zhang
       url:  'https://scholar.google.com/citations?user=yuB-cfoAAAAJ&hl=zh-CN'
-    - name: K. Jia
+    - name: Kai Jia
       url:  ''
-    - name: G. Yu
+    - name: Gang Yu
       url:  'https://sites.google.com/site/skicyyu/'
-    - name: J. Sun
+    - name: Jian Sun
       url:  'http://www.jiansun.org/'
   publisher:  'CVPR 2018'
   place: 'in Salt Lake City, Utah'
   status:   '(Spotlight)'
-  desc: 'Mini-batch size, a key factor in the training, has not been well studied in previous works on object detection. In this paper, we propose a Large Mini-Batch Object Detector (MegDet) to enable the training with much larger mini-batch size than previous work (i.e., from 16 to 256), so that we are able to effectively utilize multiple GPUs (up to 128 in our experiments) to significantly accelerate training procedure. Our detector is trained in much shorter time yet achieves better accuracy. The MegDet is the backbone of our submission (mmAP 52.5%) to COCO 2017 Challenge, where we won the 1st place of Detection task.'
+  desc: 'Mini-batch size, a key factor in the training, has not been well studied in previous works on object detection. We propose a Large Mini-Batch Object Detector to enable the training with much larger mini-batch size than previous work. Our detector is trained in much shorter time yet achieves better accuracy. The MegDet is the backbone of our submission to COCO 2017 Challenge, where we won the 1st place of Detection task.'
   tags:
     - name: 'arXiv'
       url:  'https://arxiv.org/abs/1711.07240'
@@ -172,21 +204,21 @@
   selected: true
   has_equal_contribution: no
   authors:
-    - name: X. Wang
+    - name: Xinlong Wang
       url:  ''
-    - name: <strong>T. Xiao</strong>
+    - name: <strong>Tete Xiao</strong>
       url:  'http://tetexiao.com'
-    - name: Y. Jiang
+    - name: Yuning Jiang
       url:  'https://yuningjiang.github.io/'
-    - name: S. Shao
+    - name: Shuai Shao
       url:  ''
-    - name: J. Sun
+    - name: Jian Sun
       url:  'http://www.jiansun.org/'    
-    - name: C. Shen
+    - name: Chunhua Shen
       url:  'https://cs.adelaide.edu.au/~chhshen/'
   publisher:  'CVPR 2018'
   place: 'in Salt Lake City, Utah'
-  desc: 'Detecting individual pedestrians in a crowd remains a challenging problem. In this paper, we explore how a state-of-the-art pedestrian detector is harmed by crowd occlusion and propose a novel crowd-robust regression loss specifically designed for crowd scenes. This loss is driven by two motivations: the attraction by target, and the repulsion by other surrounding objects. Our detector trained by repulsion loss outperforms all the state-of-the-art methods with a significant improvement in occlusion cases.'
+  desc: 'Detecting individual pedestrians in a crowd remains a challenging problem. We explore how a state-of-the-art pedestrian detector is harmed by crowd occlusion and propose a novel crowd-robust regression loss specifically designed for crowd scenes. '
   tags:
     - name: 'arXiv'
       url:  'https://arxiv.org/abs/1711.07752'
@@ -200,19 +232,19 @@
   selected: true
   has_equal_contribution: true
   authors:
-    - name: J. Mao
+    - name: Jiayuan Mao
       url:  'http://vccy.xyz/'
       equal_contribution: true
-    - name: <strong>T. Xiao</strong>
+    - name: <strong>Tete Xiao</strong>
       url:  ''
       equal_contribution: true
-    - name: Y. Jiang
+    - name: Yuning Jiang
       url:  'https://yuningjiang.github.io/'
-    - name: Z. Cao
+    - name: Zhimin Cao
       url:  ''
   publisher:  'CVPR 2017'
   place:    'in Honolulu, Hawaii'
-  desc: 'Aggregating extra features has been considered as an effective approach to boost traditional pedestrian detection methods. The first contribution of this paper is exploring this in CNN-based pedestrian detection frameworks by evaluating the effects of different kinds of extra features quantitatively. Moreover, we propose a novel network architecture to jointly learn pedestrian detection as well as the given extra feature. By multi-task training, HyperLearner is able to utilize the information of given features and improve detection performance without extra inputs in inference.'
+  desc: 'We explore various kinds of channel features to examine their outcome in CNN-based pedestrian detection frameworks, and propose a network architecture to jointly learn pedestrian detection as well as the given extra feature.'
   tags:
     - name: 'arXiv'
       url:  'https://arxiv.org/abs/1705.02757'

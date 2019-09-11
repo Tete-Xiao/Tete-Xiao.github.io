@@ -6,8 +6,8 @@ description:
 keywords:
   en: "Tete Xiao,Publications,Posts,Research,Deep Learning,Computer Vision,Natural Language Processing"
   cn: "肖特特,学术论文,博客,研究,深度学习,计算机视觉,自然语言处理"
-background: /images/background/background-aurora.jpg
-deep_background: /images/background/background-aurora.jpg
+background: /images/background/background-berkeley.jpg
+deep_background: /images/background/background-berkeley.jpg
 
 baseurl: ""
 # the subpath of your site, e.g. /blog/
@@ -43,5 +43,5 @@ scss:
   sass_dir: _scss
   style: :compressed
 
-gems:
+plugins:
   ['jekyll-paginate', 'jekyll/scholar', 'jekyll-sitemap']

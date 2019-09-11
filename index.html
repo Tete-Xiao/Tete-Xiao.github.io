@@ -70,7 +70,7 @@ layout: home
         </div>
         <div class="authors">
           {% for author in publication.authors %}
-            <a class="author" href="{{ author.url }}">
+            <a class="author" href="{{author.url}}">
               {{ author.name | prepend: ' '}}
               {% if author.equal_contribution %}* {% endif %}
             </a>
