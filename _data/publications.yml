@@ -17,11 +17,11 @@
     - name: Bolei Zhou
       url:  'http://bzhou.ie.cuhk.edu.hk/'
   publisher:  'ICCV2019'
-  place:    'in Seoul, South Korea'
+  place:    'in Seoul, Korea'
   desc: 'Objects are entities we act upon, where the functionality of an object is determined by how we interact with it. We propose a Dual Attention Network model which reasons about human-object interactions. The recognition of objects and actions mutually benefit each other. It can also perform weak spatiotemporal localization and affordance segmentation, despite being trained only with video-level labels. The model not only finds when an action is happening and which object is being manipulated, but also identifies which part of the object is being interacted with.'
   tags:
     - name: 'arXiv'
-      url:  'https://tetexiao.com'
+      url:  'https://arxiv.org/abs/1909.04743'
     - name: 'pdf'
       url:  '/pdf/tete2019_att.pdf'
     - name: 'project page'
