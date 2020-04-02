@@ -1,3 +1,37 @@
+- title: 'Something-Else: Compositional Action Recognition with Spatial-Temporal Interaction Networks'
+  date:  'June 2020'
+  imgurl: '/images/projects/2020/tete2020_smthelse.png'
+  imgprop: 'frame'
+  selected: true
+  has_equal_advising: true
+  authors:
+    - name: Joanna Materzynska
+      url:  ''
+    - name: <strong>Tete Xiao</strong>
+      url:  'http://tetexiao.com'
+    - name: Roei Herzig
+      url:  'https://roeiherz.github.io/'
+    - name: Huijuan Xu
+      url:  'https://cs-people.bu.edu/hxu/'
+      equal_advising: true
+    - name: Xiaolong Wang
+      url:  'https://xiaolonw.github.io/'
+      equal_advising: true
+    - name: Trevor Darrell
+      url:  'https://people.eecs.berkeley.edu/~trevor/'
+      equal_advising: true
+  publisher:  'CVPR20'
+  place:    'in Seattle, Washington'
+  desc: 'We study the compositionality of action by looking into the dynamics of subject-object interactions. We propose a novel model which can explicitly reason about the geometric relations between constituent objects and an agent performing an action. We collect dense object box annotations on the Something-Something dataset. We propose a novel compositional action recognition task where the training combinations of verbs and nouns do not overlap with the test set.'
+  tags:
+    - name: 'arxiv'
+      url:  'https://arxiv.org/abs/1912.09930'
+    - name: 'project page'
+      url:  'https://joaanna.github.io/something_else/'
+    - name: 'dataset'
+      url:  'https://github.com/joaanna/something_else'
+
+
 - title: 'Reasoning About Human-Object Interactions Through Dual Attention Networks'
   date:  'Aug. 2019'
   imgurl: '/images/projects/2019/tete2019_att.png'
@@ -16,7 +50,7 @@
       url:  'http://cvcl.mit.edu/audeoliva.html'
     - name: Bolei Zhou
       url:  'http://bzhou.ie.cuhk.edu.hk/'
-  publisher:  'ICCV2019'
+  publisher:  'ICCV19'
   place:    'in Seoul, Korea'
   desc: 'Objects are entities we act upon, where the functionality of an object is determined by how we interact with it. We propose a Dual Attention Network model which reasons about human-object interactions. The recognition of objects and actions mutually benefit each other. It can also perform weak spatiotemporal localization and affordance segmentation, despite being trained only with video-level labels. The model not only finds when an action is happening and which object is being manipulated, but also identifies which part of the object is being interacted with.'
   tags:
@@ -84,7 +118,7 @@
       url:  'https://yuningjiang.github.io/'
     - name: Jian Sun
       url:  'http://www.jiansun.org/'
-  publisher:  'ECCV2018'
+  publisher:  'ECCV18'
   place:    'in München, Germany'
   desc: 'In this paper, we study a new task called Unified Perceptual Parsing, which requires the machine vision systems to recognize as many visual concepts as possible from a given image. A multi-task framework called UPerNet and a training strategy are developed to learn from heterogeneous image annotations. We show that the network is able to effectively segment a wide range of concepts from images. It is further applied to discover visual knowledge in natural scenes.'
   tags:
@@ -118,7 +152,7 @@
       url:  'https://yuningjiang.github.io/'
     - name: Jian Sun
       url:  'http://www.jiansun.org/'
-  publisher: 'ECCV2018'
+  publisher: 'ECCV18'
   place:    'in München, Germany'
   status:   '(Oral)'
   desc: 'Modern CNN-based object detectors rely on bounding box regression and non-maximum suppression (NMS) to localize objects. While the probabilities for class labels naturally reflect classification confidence, localization confidence is absent. We propose IoU-Net learning to predict the IoU between each detected bounding box and the matched ground-truth. Furthermore, we formulate the predicted IoU as an optimization objective and propose an operator to enable the optimization via gradient descent.'
@@ -149,7 +183,7 @@
       url:  'https://yuningjiang.github.io'
     - name: Jian Sun
       url:  'http://www.jiansun.org/'
-  publisher:  'COLING 2018'
+  publisher:  'COLING18'
   place:    'in Santa Fe, New Mexico'
   desc: 'We study the problem of grounding distributional representations of texts on the visual domain, namely visual-semantic embeddings (VSE for short). We show that previous model is restricted to establish the link between textual semantics and visual concepts by adversarial attacking. We alleviate this problem by augmenting the MS-COCO image captioning datasets with synthesized textual contrastive adversarial samples.'
   tags:
@@ -187,7 +221,7 @@
       url:  'https://sites.google.com/site/skicyyu/'
     - name: Jian Sun
       url:  'http://www.jiansun.org/'
-  publisher:  'CVPR 2018'
+  publisher:  'CVPR18'
   place: 'in Salt Lake City, Utah'
   status:   '(Spotlight)'
   desc: 'Mini-batch size, a key factor in the training, has not been well studied in previous works on object detection. We propose a Large Mini-Batch Object Detector to enable the training with much larger mini-batch size than previous work. Our detector is trained in much shorter time yet achieves better accuracy. The MegDet is the backbone of our submission to COCO 2017 Challenge, where we won the 1st place of Detection task.'
@@ -216,7 +250,7 @@
       url:  'http://www.jiansun.org/'    
     - name: Chunhua Shen
       url:  'https://cs.adelaide.edu.au/~chhshen/'
-  publisher:  'CVPR 2018'
+  publisher:  'CVPR18'
   place: 'in Salt Lake City, Utah'
   desc: 'Detecting individual pedestrians in a crowd remains a challenging problem. We explore how a state-of-the-art pedestrian detector is harmed by crowd occlusion and propose a novel crowd-robust regression loss specifically designed for crowd scenes. '
   tags:
@@ -242,7 +276,7 @@
       url:  'https://yuningjiang.github.io/'
     - name: Zhimin Cao
       url:  ''
-  publisher:  'CVPR 2017'
+  publisher:  'CVPR17'
   place:    'in Honolulu, Hawaii'
   desc: 'We explore various kinds of channel features to examine their outcome in CNN-based pedestrian detection frameworks, and propose a network architecture to jointly learn pedestrian detection as well as the given extra feature.'
   tags:

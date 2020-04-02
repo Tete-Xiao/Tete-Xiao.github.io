@@ -73,12 +73,13 @@ layout: home
             <a class="author" href="{{author.url}}">
               {{ author.name | prepend: ' '}}
               {% if author.equal_contribution %}* {% endif %}
+              {% if author.equal_advising %}<sup>&#8224</sup> {% endif %}
             </a>
             {% if forloop.last == false %},{% endif %}
           {% endfor %}
         </div>
         <div class="desc">
-          <p>{{ publication.desc }}{% if publication.has_equal_contribution %}<br>*: Equal contribution {% endif %} </p>
+          <p>{{ publication.desc }}{% if publication.has_equal_contribution %}<br>*: equal contribution {% endif %} {% if publication.has_equal_advising %}<br>&#8224: equal advising {% endif %}</p>
         </div>
         <div class="publish">
           <span class="publisher">{{ publication.publisher }}</span>
