@@ -2,8 +2,8 @@
   title: "PhD @ UC Berkeley"
   desc:  "Artificial Intelligence"
   host: 
-    name:  "<br><a href='https://people.eecs.berkeley.edu/~trevor/'>Prof. Trevor Darrell</a> and <a href='https://people.eecs.berkeley.edu/~efros/'>Prof. Alexei Efros</a>"
-    role: "Advisor (temporary)"
+    name:  "<br><a href='https://people.eecs.berkeley.edu/~trevor/'>Prof. Trevor Darrell</a>"
+    role: "Advisor"
   brief: true
 - date:  "July 2018 - Dec. 2018"
   title: "Intern @ MIT-IBM Watson AI Lab"
