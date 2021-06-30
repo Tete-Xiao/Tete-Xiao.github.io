@@ -72,6 +72,84 @@
   <tbody><tr><td><sectionheading>&nbsp;&nbsp;Publications</sectionheading></td></tr></tbody>
 </table>
 
+<!-- xiao2021early -->
+<table width="100%" align="center" border="0" cellspacing="0" cellpadding="15"><tbody>
+<tr>
+    <td width="33%" valign="center" align="center">
+        <img src="images/vitconv.png" style="display: inline" width="100%">
+    </td>
+
+    <td width="67%" valign="top">
+        <p>
+            <a href="https://arxiv.org/abs/2106.14881" id="xiao2021early">
+                <heading>Early Convolutions Help Transformers See Better</heading>
+            </a><br>
+            <b>Tete Xiao</b>, 
+            <a href='https://scholar.google.com/citations?user=QOO8OCcAAAAJ&hl=en'>Mannat Singh</a>, 
+            <a href='https://scholar.google.ca/citations?user=T94KevkAAAAJ&hl=en'>Eric Mintun</a>, 
+            <a href='https://people.eecs.berkeley.edu/~trevor/'>Trevor Darrell</a>, 
+            <a href='https://pdollar.github.io/'>Piotr Dollár*</a>,<br>
+            <a href='https://www.rossgirshick.info/'>Ross Girshick*</a><br> 
+            Tech report, 2021 <br>
+            *: equal contribution<br>
+          | <a href="https://arxiv.org/abs/2106.14881">arXiv</a> |
+        </p>
+        <p>
+            We analyze the substandard optimization behavior of ViT and propose a simple fix that dramatically increases optimization stability and also improves peak performance.
+        </p>
+    </td>
+
+</tr>
+</tbody></table>
+
+<!-- xiao2021region -->
+<table width="100%" align="center" border="0" cellspacing="0" cellpadding="15"><tbody>
+<tr onmouseout="resim_stop()" onmouseover="resim_start()">
+    <td width="33%" valign="center" align="center">
+        <div class="image_mouseout">
+            <div class="image_mouseover" id="resim_image" style="opacity: 0;">
+                <img src="images/resim_after.png" ,="" width="100%">
+            </div>
+            <div class="image_constant" id="resim_constant" style="opacity: 1;">
+                <img src="images/resim_before.png" ,="" width="100%">
+            </div>
+        </div>
+        <script type="text/javascript">
+            function resim_start() {
+                document.getElementById('resim_constant').style.opacity = "0";
+                document.getElementById('resim_image').style.opacity = "1";
+            }
+
+            function resim_stop() {
+                document.getElementById('resim_image').style.opacity = "0";
+                document.getElementById('resim_constant').style.opacity = "1";
+            }
+            resim_stop()
+        </script>
+    </td>
+
+    <td width="67%" valign="top">
+        <p>
+            <a href="https://arxiv.org/abs/2103.12902" id="xiao2021region">
+                <heading>Region Similarity Representation Learning</heading>
+            </a><br>
+            <b>Tete Xiao*</b>, 
+            <a href='http://people.eecs.berkeley.edu/~cjrd/'>Colorado Reed*</a>, 
+            <a href='https://xiaolonw.github.io/'>Xiaolong Wang</a>, 
+            <a href='https://people.eecs.berkeley.edu/~keutzer/'>Kurt Keutzer</a>, 
+            <a href='https://people.eecs.berkeley.edu/~trevor/'>Trevor Darrell</a><br> 
+            Tech report, 2021 <br>
+            *: equal contribution<br>
+          | <a href="https://arxiv.org/abs/2103.12902">arXiv</a> |
+        </p>
+        <p>
+            An approach to self-supervised representation learning for localization-based tasks such as object detection and segmentation.
+        </p>
+    </td>
+
+</tr>
+</tbody></table>
+
 <!-- xiao2020should -->
 <table width="100%" align="center" border="0" cellspacing="0" cellpadding="15"><tbody>
 <tr onmouseout="ssl_stop()" onmouseover="ssl_start()">
@@ -108,7 +186,7 @@
             <a href='https://xiaolonw.github.io/'>Xiaolong Wang</a>, 
             <a href='http://people.eecs.berkeley.edu/~efros/'>Alexei A. Efros</a>, 
             <a href='https://people.eecs.berkeley.edu/~trevor/'>Trevor Darrell</a><br> 
-            To appear in International Conference on Learning Representations (<b>ICLR</b>), 2021<br>
+            International Conference on Learning Representations (<b>ICLR</b>), 2021<br>
           | <a href="https://arxiv.org/abs/2008.05659">arXiv</a> |
         </p>
         <p>
@@ -156,7 +234,8 @@
             <a href='http://people.eecs.berkeley.edu/~efros/'>Alexei A. Efros</a>, 
             <a href='https://cs.nyu.edu/~lp91/'>Lerrel Pinto</a>, 
             <a href='https://xiaolonw.github.io/'>Xiaolong Wang</a><br> 
-            To appear in International Conference on Learning Representations (<b>ICLR</b>), 2021 (Oral presentation)<br>
+            International Conference on Learning Representations (<b>ICLR</b>), 2021<br>
+            <b>Oral presentation</b><br>
           | <a href="https://sjtuzq.github.io/cycle_dynamics.html">project page</a> |
             <a href="https://arxiv.org/abs/2012.09811">arXiv</a> |
             <a href="https://www.youtube.com/watch?v=CZAsUM96oVg">video</a> |
@@ -408,13 +487,14 @@
             <a href='https://jiayuanm.com/'>Jiayuan Mao*</a>, 
             <b>Tete Xiao</b>, 
             <a href='https://yuningjiang.github.io/'>Yuning Jiang</a><br> 
-            European Conference on Computer Vision (<b>ECCV</b>), 2018 (Oral presentation) <br>
+            European Conference on Computer Vision (<b>ECCV</b>), 2018<br>
+            <b>Oral presentation</b><br>
             *: equal contribution<br>
           | <a href="https://arxiv.org/pdf/1807.11590.pdf">arXiv</a> |
             <a href="https://github.com/vacancy/PreciseRoIPooling">code</a> |
         </p>
         <p>
-            Dissecting object localization accuracy through IouNet and Precise RoI Pooling.
+            Dissecting object localization through IouNet and Precise RoI Pooling.
         </p>
     </td>
 
