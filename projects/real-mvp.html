@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="real-mvp.css">
+    <link rel="icon" type="image/x-icon" href="real-mvp/favicon.png">
+    <title>Real-World Robot Learning with Masked Visual Pre-training</title>
+</head>
+<body>
+<div id="title_slide">
+    <div class="title_left">
+        <h1>Real-World Robot Learning with<br> Masked Visual Pre-training</h1>
+        <div class="author-container">
+            <div class="grid-item"><a href="https://people.eecs.berkeley.edu/~ilija/">Ilija Radosavovic*</a></div>
+            <div class="grid-item"><a href="https://tetexiao.com/">Tete Xiao*</a></div>
+            <div class="grid-item"><a href="https://stepjam.github.io/">Stephen James</a></div>
+            <div class="grid-item"><a href="https://people.eecs.berkeley.edu/~pabbeel/">Pieter Abbeel</a></div>
+            <div class="grid-item"><a href="http://people.eecs.berkeley.edu/~malik/">Jitendra Malik**</a></div>
+            <div class="grid-item"><a href="http://people.eecs.berkeley.edu/~trevor/">Trevor Darrell**</a></div>
+        </div>
+        <div class="mobile-author-container-1">
+            <div class="grid-item"><a href="https://people.eecs.berkeley.edu/~ilija/">Ilija Radosavovic*</a></div>
+            <div class="grid-item"><a href="https://tetexiao.com/">Tete Xiao*</a></div>
+            <div class="grid-item"><a href="https://stepjam.github.io/">Stephen James</a></div>
+        </div>
+        <div class="mobile-author-container-2">
+            <div class="grid-item"><a href="https://people.eecs.berkeley.edu/~pabbeel/">Pieter Abbeel</a></div>
+            <div class="grid-item"><a href="http://people.eecs.berkeley.edu/~malik/">Jitendra Malik**</a></div>
+            <div class="grid-item"><a href="http://people.eecs.berkeley.edu/~trevor/">Trevor Darrell**</a></div>
+        </div>
+        <div class="berkeley">
+            <p>University of California, Berkeley</p>
+        </div>
+        <div class="button-container">
+            <a href="http://arxiv.org/abs/2210.03109" class="button">Paper</a>
+            <a href="https://www.github.com/ir413/mvp" class="button">Code</a>
+        </div>
+        <div id="abstract" class="grid-container">
+            <p>
+                In this work, we explore self-supervised visual pre-training on images from diverse, in-the-wild videos for real-world robotic tasks.
+                Like prior work, our visual representations are pre-trained via a masked autoencoder (MAE), frozen, and then passed into a learnable control module. 
+                Unlike prior work, we show that the pre-trained representations are effective across a range of real-world robotic tasks and embodiments. 
+                We find that our encoder consistently outperforms CLIP (up to 75%), supervised ImageNet pre-training (up to 81%), and training from scratch (up to 81%).
+                Finally, we train a 307M parameter vision transformer on a massive collection of 4.5M images from the Internet and egocentric videos, 
+                and demonstrate clearly the benefits of scaling visual pre-training for robot learning.
+            </p>
+        </div>
+    </div>
+</div>
+<hr class="rounded">
+<div id="overview">
+    <p>
+        Learning representations with large neural networks has enabled impressive results in AI.
+        Examples of this progress can be seen in computer vision, natural language processing, and audio generation.
+        One area that has yet to see similar progress is robotics. 
+        A major reason for this is that robots are typically deployed in real-world environments, 
+        where the data distribution is highly variable and often unknown, and data collection is expensive.
+    </p>
+
+    <h1>Large-Scale Visual Pre-training </h1>
+    <div class="video_container">
+        <img src="real-mvp/teaser.png" alt="Basic tasks.">
+        <div class="caption">
+            <p> Masked visual pre-training on in-the-wild images for real-world robotic tasks</p>
+        </div>
+    </div>
+    <p>
+        The Internet contains a wealth of observational data, and a large fraction of the population is now equipped with portable devices that can capture images and videos.
+        These images and videos cover a wide range of scenes, objects, and activities, and are often captured in the wild.
+        Inspired by this, we first compile a massive collection of 4.5 million images from ImageNet, Epic Kitchens, Something Something, 
+        100 Days of Hands, and Ego4D datasets.
+        <br><br>
+        We use the collected data for learning visual representations with self-supervision.
+        The core of our approach is the masked autoencoder (MAE).
+        MAE masks out random patches in an image and reconstructs the missing content with a vision transformer (ViT). 
+        The hope is that, by learning to predict the missing content in real-world images,
+        the model will learn useful properties of the visual world that will enable it to learn to perform real-world robotic tasks.
+    </p>
+
+    <h1>One Vision Encoder for All Tasks</h1>
+    <p>
+        After learning the visual representations, we freeze the encoder and pass the representations into a learnable control module.
+        Thanks to this design, we can learn to perform a wide range of real-world robotic tasks using a single vision encoder with 
+        only 20 to 80 expert demonstrations and different embodiments (robot arms and robot hands).
+    </p>
+    <div class="approach">
+        <div class="video_container">
+            <video loop autoplay muted playsinline preload="metadata">
+                <source src="real-mvp/approach.mp4" type="video/mp4">
+            </video>
+            <div class="caption" style="margin-top: -2.5vw">
+                <p> The same vision encoder is used for all downstream robotic tasks and embodiments </p>
+            </div>
+        </div>
+    </div>
+
+    <h1>Enables Solving Various Robotic Tasks</h1>
+
+    <p>
+        We consider six different tasks for the 7-DoF xArm robot: 
+        basic motor control tasks and visually complex tasks.
+        The first category includes tasks that require the robot to perform simple and basic motor control actions,
+        such as reaching a red block, pushing a wooden cube, and picking a yellow cube.
+        The second category involves visually diverse scenes and objects, such as closing a fridge door (scene context),
+        picking eight types of fruits (different objects), and picking a detergent bottle from a sink (object in context).
+        Since our approach learns visual representations from real-world images,
+        it can solve robotic tasks that involve interaction with everyday objects.
+    </p>
+
+    <div class="slider_section">
+        <div class="container-2 w-container">    
+            <div data-delay="10000" data-animation="slide" class="slider_v2 w-slider" data-autoplay="true"
+                 data-easing="ease" data-hide-arrows="false" data-disable-swipe="false" data-autoplay-limit="0"
+                 data-nav-spacing="3" data-duration="800" data-infinite="true">
+                <div class="mask w-slider-mask">
+                    <div class="slide w-slide">
+                        <div class="div-block-9 first_video"> <div class="video_class w-embed">
+                            <video width=100% height=100% autoplay muted controls loop preload="metadata">
+                                <source src="real-mvp/visual_gen_scenes_objects/pick_from_sink_3.mp4"
+                                        type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div> </div>
+                        <div class="div-block-9"> <div class="video_class w-embed">
+                            <video width=100% height=100% autoplay muted controls loop preload="metadata">
+                                <source src="real-mvp/basic_tasks/reach_1.mp4"
+                                        type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div> </div>
+                    </div>
+                    <div class="w-slide"> <div class="div-block-9"> <div class="video_class w-embed">
+                        <video width=100% height=100% autoplay muted controls loop preload="metadata">
+                            <source src="real-mvp/basic_tasks/reach_2.mp4"
+                                    type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div> </div> </div>
+                    <div class="w-slide"> <div class="div-block-9"> <div class="video_class w-embed">
+                        <video width=100% height=100% autoplay muted controls loop preload="metadata">
+                            <source src="real-mvp/basic_tasks/push_1.mp4"
+                                    type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div> </div> </div>
+                    <div class="w-slide"> <div class="div-block-9"> <div class="video_class w-embed">
+                        <video width=100% height=100% autoplay muted controls loop preload="metadata">
+                            <source src="real-mvp/basic_tasks/push_2.mp4"
+                                    type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div> </div> </div>
+                    <div class="w-slide"> <div class="div-block-9"> <div class="video_class w-embed">
+                        <video width=100% height=100% autoplay muted controls loop preload="metadata">
+                            <source src="real-mvp/basic_tasks/pick_2.mp4"
+                                    type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div> </div> </div>
+                    <div class="w-slide"> <div class="div-block-9"> <div class="video_class w-embed">
+                        <video width=100% height=100% autoplay muted controls loop preload="metadata">
+                            <source src="real-mvp/basic_tasks/pick_1.mp4"
+                                    type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div> </div> </div>
+                    <div class="w-slide"> <div class="div-block-9"> <div class="video_class w-embed">
+                        <video width=100% height=100% autoplay muted controls loop preload="metadata">
+                            <source src="real-mvp/visual_gen_scenes/close_fridge_door_1.mp4"
+                                    type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div> </div> </div>
+                    <div class="w-slide"> <div class="div-block-9"> <div class="video_class w-embed">
+                        <video width=100% height=100% autoplay muted controls loop preload="metadata">
+                            <source src="real-mvp/visual_gen_scenes/close_fridge_door_3.mp4"
+                                    type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div> </div> </div>
+                    <div class="w-slide"> <div class="div-block-9"> <div class="video_class w-embed">
+                        <video width=100% height=100% autoplay muted controls loop preload="metadata">
+                            <source src="real-mvp/visual_gen_objects/pick_any_fruit_3.mp4"
+                                    type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div> </div> </div>
+                    <div class="w-slide"> <div class="div-block-9"> <div class="video_class w-embed">
+                        <video width=100% height=100% autoplay muted controls loop preload="metadata">
+                            <source src="real-mvp/visual_gen_objects/pick_any_fruit_6.mp4"
+                                    type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div> </div> </div>
+                    <div class="w-slide"> <div class="div-block-9"> <div class="video_class w-embed">
+                        <video width=100% height=100% autoplay muted controls loop preload="metadata">
+                            <source src="real-mvp/visual_gen_objects/pick_any_fruit_2.mp4"
+                                    type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div> </div> </div>
+                    <div class="w-slide"> <div class="div-block-9"> <div class="video_class w-embed">
+                        <video width=100% height=100% autoplay muted controls loop preload="metadata">
+                            <source src="real-mvp/visual_gen_objects/pick_any_fruit_1.mp4"
+                                    type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div> </div> </div>
+                    <div class="w-slide"> <div class="div-block-9"> <div class="video_class w-embed">
+                        <video width=100% height=100% autoplay muted controls loop preload="metadata">
+                            <source src="real-mvp/visual_gen_objects/pick_any_fruit_4.mp4"
+                                    type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div> </div> </div>
+                    <div class="w-slide"> <div class="div-block-9"> <div class="video_class w-embed">
+                        <video width=100% height=100% autoplay muted controls loop preload="metadata">
+                            <source src="real-mvp/visual_gen_objects/pick_any_fruit_5.mp4"
+                                    type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div> </div> </div>
+                    <div class="w-slide"> <div class="div-block-9"> <div class="video_class w-embed">
+                        <video width=100% height=100% autoplay muted controls loop preload="metadata">
+                            <source src="real-mvp/visual_gen_scenes_objects/pick_from_sink_2.mp4"
+                                    type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div> </div> </div>
+                    <div class="w-slide">
+                        <div class="div-block-9"> <div class="video_class w-embed">
+                            <video width=100% height=100% autoplay muted controls loop preload="metadata">
+                                <source src="real-mvp/visual_gen_scenes_objects/pick_from_sink_3.mp4"
+                                        type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div> </div>
+                        <div class="div-block-9 last_block"> <div class="video_class w-embed">
+                            <video width=100% height=100% autoplay muted controls loop preload="metadata">
+                                <source src="real-mvp/basic_tasks/reach_1.mp4"
+                                        type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div> </div>
+                    </div>
+                </div>
+                <div class="w-slider-arrow-left"> <div class="w-icon-slider-left"> </div> </div>
+                <div class="w-slider-arrow-right"> <div class="w-icon-slider-right"> </div> </div>
+                <div class="nerf_slide_nav w-slider-nav w-slider-nav-invert w-round"> </div>
+            </div>
+        </div>
+    </div>
+
+    <p>
+    The control policies predict <em> joint angles </em> from pixels and make no assumptions about the action space 
+    (for example, by design we do not use the end-effector information for learning). 
+    Therefore, the approach can be directly applied on a multi-finger Allegro hand.
+    <br> <br>
+    We first consider a reaching task where the goal is to reach the top of an object with the tip of the index finger.
+    The position of the object is randomized across the palm of the hand.
+    We evaluate the trained policy on 8 seen objects as well as 45 unseen objects, shown in the following videos.
+    </p>
+    <div class="allegroreachtop">
+        <video autoplay muted playsinline loop preload="metadata">
+            <source src="real-mvp/allegro_reach/IMG_6452.mp4" type="video/mp4">
+        </video>
+        <video autoplay muted playsinline loop preload="metadata">
+            <source src="real-mvp/allegro_reach/IMG_6481.mp4" type="video/mp4">
+        </video>
+        <video autoplay muted playsinline loop preload="metadata">
+            <source src="real-mvp/allegro_reach/IMG_6490.mp4" type="video/mp4">
+        </video>
+        <video autoplay muted playsinline loop preload="metadata">
+            <source src="real-mvp/allegro_reach/IMG_6544.mp4" type="video/mp4">
+        </video>
+    </div>
+    <div class="allegroreachmid">
+        <video autoplay muted playsinline loop preload="metadata">
+            <source src="real-mvp/allegro_reach/IMG_6500.mp4" type="video/mp4">
+        </video>
+        <video autoplay muted playsinline loop preload="metadata">
+            <source src="real-mvp/allegro_reach/IMG_6598.mp4" type="video/mp4">
+        </video>
+        <video autoplay muted playsinline loop preload="metadata">
+            <source src="real-mvp/allegro_reach/IMG_6536.mp4" type="video/mp4">
+        </video>
+        <video autoplay muted playsinline loop preload="metadata">
+            <source src="real-mvp/allegro_reach/IMG_6505.mp4" type="video/mp4">
+        </video>
+    </div>
+    <div class="allegroreachmid">
+        <video autoplay muted playsinline loop preload="metadata">
+            <source src="real-mvp/allegro_reach/IMG_6561.mp4" type="video/mp4">
+        </video>
+        <video autoplay muted playsinline loop preload="metadata">
+            <source src="real-mvp/allegro_reach/IMG_6688.mp4" type="video/mp4">
+        </video>
+        <video autoplay muted playsinline loop preload="metadata">
+            <source src="real-mvp/allegro_reach/IMG_6698.mp4" type="video/mp4">
+        </video>
+        <video autoplay muted playsinline loop preload="metadata">
+            <source src="real-mvp/allegro_reach/IMG_6702.mp4" type="video/mp4">
+        </video>
+    </div>
+    <div class="allegroreachbot">
+        <div class="video_container">
+            <video autoplay muted playsinline loop preload="metadata">
+                <source src="real-mvp/allegro_reach/IMG_6509.mp4" type="video/mp4">
+            </video>
+            <div class="caption">
+                <p>Reaching an object using the Allegro hand's index finger (seen objects in the first row, unseen for the rest)</p>
+            </div>
+        </div>
+        <div class="video_container">
+            <video autoplay muted playsinline loop preload="metadata">
+                <source src="real-mvp/allegro_reach/IMG_6655.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="video_container">
+            <video autoplay muted playsinline loop preload="metadata">
+                <source src="real-mvp/allegro_reach/IMG_6638.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="video_container">
+            <video autoplay muted playsinline loop preload="metadata">
+                <source src="real-mvp/allegro_reach/IMG_6542.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
+    <p>
+        Next, we try a cube flipping task in which the goal is to flip a rubber cube that is placed in the palm.
+        The position of the cube is randomized across the palm.
+        Thus, the policy must rely on visual cues to accomplish the task.
+    </p>
+
+    <br>
+    <div class="allegroupper">
+        <video autoplay muted playsinline loop preload="metadata">
+            <source src="real-mvp/allegro_flip/IMG_6337.mp4" type="video/mp4">
+        </video>
+        <video autoplay muted playsinline loop preload="metadata">
+            <source src="real-mvp/allegro_flip/IMG_6349.mp4" type="video/mp4">
+        </video>
+    </div>
+    <div class="allegrolower">
+        <div class="video_container">
+            <video autoplay muted playsinline loop preload="metadata">
+                <source src="real-mvp/allegro_flip/IMG_6325.mp4" type="video/mp4">
+            </video>
+            <div class="caption">
+                <p>Flipping a rubber cube randomly placed on the Allegro hand's palm</p>
+            </div>
+        </div>
+        <div class="video_container">
+            <video autoplay muted playsinline loop preload="metadata">
+                <source src="real-mvp/allegro_flip/IMG_6326.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
+
+    <h1>Outperforms Standard Vision Encoders</h1>
+    <p>
+        We compare our approach to a set of state-of-the-art vision backbones: 
+        <em> CLIP </em> trained on 400M text-image pairs, <em> supervised model </em> trained
+        on ImageNet, and a model trained <em> from scratch </em> with in-domain demonstration data. 
+        For fair comparisons, all methods use encoders of the same size.
+        We empirically observe that the CLIP encoder performs the best among the baselines, 
+        and the ranking order is consistent across the tasks.
+        Our approach outperforms the baselines by a considerable margin.
+        As the tasks become more complex (for example, pick sink), the gap between our approach and the baselines increases.
+    </p>
+    <div class="barplot">
+        <div class="image_container">
+            <div class="caption">
+                <p>Comparison to baseline vision encoders on basic tasks (top) and complex tasks (bottom)</p>
+            </div>
+            <img src="real-mvp/basic_tasks.png" alt="Basic tasks.">
+        </div>
+    </div>
+    <div class="barplot" style="margin-top:-1.2vw">
+        <div class="image_container">
+            <img src="real-mvp/complex_tasks.png" alt="Complex tasks.">
+        </div>
+    </div>
+
+    <h1>Scales with Data and Model Size</h1>
+
+    <p>
+        Importantly, our visual pre-training approach uses a self-supervised objective that makes few 
+        assumptions about the data distribution, and does not rely on human-designed pretext tasks such as data augmentations. 
+        Therefore, the framework is well-suited for pre-training from a massive collection of unlabeled and in-the-wild visual data. 
+        Here we study scaling model and data size. 
+        <br><br>
+        We first increase the model capacity. On the left of the figure, 
+        we see that increasing the model size (~4.5x) from ViT-S to ViT-B, 
+        while keeping the data size fixed, does not increase performance and even hurts. 
+        However, if we also scale the data size from HOI to our massive Ego data collection, ViT-B brings considerable gains. 
+        These results suggests that we must scale <em> both </em> the model and the data.
+        <br><br>
+        In the middle and the right pannel, we show the performance as a function of model size. 
+        Additionally increasing the model size from the 86M parameter ViT-B to the 307M parameter ViT-L leads to further improvements. 
+        We also observe that the gain is larger for he visually harder task.
+        <em> To the best of our knowledge, ours is the largest vision model deployed to real robot tasks, 
+        and clearly demonstrates the benefits of scaling visual pre-training for real-world robot learning. </em>
+    </p>
+
+    <br>
+    <div class="scaling">
+        <div class="image_container">
+            <div class="caption">
+                <p>Scaling model and data size</p>
+            </div>
+            <img src="real-mvp/scaling.png" alt="Scaling plot.">
+        </div>
+    </div>
+
+    <h1>Collecting Demonstrations</h1>
+    <p>
+        <b> xArm. </b> 
+        We use an HTC Vive VR controller (left) to collect demonstrations for the xArm. 
+        The setup includes two external sensors that track the position of the VR controller and estimate its 6-DoF pose. 
+        Given the 6-DoF pose of the controller, we use it to control the end-effector (EE) pose of the robot. 
+        We map the EE pose to the joint angles via inverse kinematics (IK).
+        We control the gripper open/close state via a button on the controller. 
+        Using this pipeline, the user controls the system in real-time while having direct view of the robot. 
+        While the user is performing the task, we save the camera feed and robot state information as demonstrations. 
+        On average, it takes about one hour to collect 40 demonstrations using this setup.
+        <br><br>
+        <b> Allegro hand.</b> 
+        It is generally hard to control a multi-finger hand using a joystick or a VR controller. 
+        We developed a new approach based on the Meta Quest 2 device (right). 
+        We use the hand tracking provided by the Quest 2 to obtain the 3D keypoints of the human hand. 
+        We then map the human keypoints to the Allegro hand joint angles using IK. 
+        The system runs in real-time and records demonstrations 
+        while the human is controlling the robot to complete the desired task.
+    </p>
+    <div class="teleop">
+        <div class="video_container">
+            <video autoplay muted playsinline loop preload="metadata">
+                <source src="real-mvp/teleop/IMG_5347_1.mp4" type="video/mp4">
+            </video>
+            <div class="caption">
+                <p>Collecting xArm demonstrations via the HTC Vive VR controller</p>
+            </div>
+        </div>
+        <div class="video_container">
+            <video autoplay muted playsinline loop preload="metadata">
+                <source src="real-mvp/teleop/IMG_6371.mp4" type="video/mp4">
+            </video>
+            <div class="caption">
+                <p>Collecting Allegro Hand demonstrations via a Meta Quest 2</p>
+            </div>
+        </div>
+    </div>
+
+    <h1> Failure Cases </h1>
+    <p> 
+        The system is not perfect and can fail in a variety of ways. 
+        Here are some examples of failure cases.
+        For the xArm, failure happens when the robot's approaching trajectory is not sufficiently precise 
+        to reach the grasping location, resulting in the robot's gripper colliding with the object (the first and the third video below);
+        or when the robot closes its gripper too early, resulting in the object falling out of the gripper (the second and the fourth video below).
+    </p>
+    <div class="xarmfail">
+        <div class="video_container">
+            <video autoplay muted playsinline loop preload="metadata">
+                <source src="real-mvp/failure/xarm/case_1.mp4" type="video/mp4">
+            </video>
+            <div class="caption">
+                <p> Inprecise approaching trajectory </p>
+            </div>
+        </div>
+        <div class="video_container">
+            <video autoplay muted playsinline loop preload="metadata">
+                <source src="real-mvp/failure/xarm/case_2.mp4" type="video/mp4">
+            </video>
+            <div class="caption">
+                <p> Premature closing of gripper </p>
+            </div>
+        </div>
+        <div class="video_container">
+            <video autoplay muted playsinline loop preload="metadata">
+                <source src="real-mvp/failure/xarm/case_3.mp4" type="video/mp4">
+            </video>
+            <div class="caption">
+                <p> Collision with object </p>
+            </div>
+        </div>
+        <div class="video_container">
+            <video autoplay muted playsinline loop preload="metadata">
+                <source src="real-mvp/failure/xarm/case_4.mp4" type="video/mp4">
+            </video>
+            <div class="caption">
+                <p> Premature closing of gripper </p>
+            </div>
+        </div>
+    </div>
+
+    <p>
+        We generally observed four types of failure cases for the Allegro hand:
+        (1) The index finger refuses to approach the object at all.
+        (2) The index finger reaches the object but does not stop in time.
+        (3) The ring finger gets stuck after colliding with the middle finger.
+        (4) The ring finger gets stuck after colliding with the object.
+    </p>
+    <div class="allegrofail">
+        <div class="video_container">
+            <video autoplay muted playsinline loop preload="metadata">
+                <source src="real-mvp/failure/allegro/case_1.mp4" type="video/mp4">
+            </video>
+            <div class="caption">
+                <p>The index finger refuses to approach the object at all</p>
+            </div>
+        </div>
+        <div class="video_container">
+            <video autoplay muted playsinline loop preload="metadata">
+                <source src="real-mvp/failure/allegro/case_2.mp4" type="video/mp4">
+            </video>
+            <div class="caption">
+                <p>The index finger reaches the object but does not stop in time</p>
+            </div>
+        </div>
+    </div>
+    <div class="allegrofail" style="margin-top: -1vw;">
+        <div class="video_container">
+            <video autoplay muted playsinline loop preload="metadata">
+                <source src="real-mvp/failure/allegro/case_3.mp4" type="video/mp4">
+            </video>
+            <div class="caption">
+                <p>The ring finger gets stuck after colliding with the middle finger</p>
+            </div>
+        </div>
+        <div class="video_container">
+            <video autoplay muted playsinline loop preload="metadata">
+                <source src="real-mvp/failure/allegro/case_4.mp4" type="video/mp4">
+            </video>
+            <div class="caption">
+                <p>The ring finger gets stuck after colliding with the object</p>
+            </div>
+        </div>
+    </div>
+
+    <h1>BibTeX</h1>
+    <p class="bibtex">
+        @article{Radosavovic2022,<br>
+        &nbsp;&nbsp;title={Real-World Robot Learning with Masked Visual Pre-training},<br>
+        &nbsp;&nbsp;author={Ilija Radosavovic and Tete Xiao and Stephen James and Pieter Abbeel and Jitendra Malik and Trevor Darrell},<br>
+        &nbsp;&nbsp;year={2022},<br>
+        &nbsp;&nbsp;journal={CoRL}<br>
+        }
+    </p>
+</div>
+<script type="text/javascript">
+    /* https://stackoverflow.com/questions/3027707/how-to-change-the-playing-speed-of-videos-in-html5 */
+    document.querySelector('video').defaultPlaybackRate = 0.65;
+    document.querySelector('video').play();
+
+    var videos =document.querySelectorAll('video');
+    for (var i=0;i<1;i++)
+    {
+        videos[i].playbackRate = 0.65;
+    }
+</script>
+<script>
+    /* https://stackoverflow.com/questions/21163756/html5-and-javascript-to-play-videos-only-when-visible */
+    var videos = document.getElementsByTagName("video");
+
+    function checkScroll() {
+        var fraction = 0.5; // Play when 70% of the player is visible.
+
+        for(var i = 0; i < 1; i++) {  // only apply to the first video
+
+            var video = videos[i];
+
+            var x = video.offsetLeft, y = video.offsetTop, w = video.offsetWidth, h = video.offsetHeight, r = x + w, //right
+                b = y + h, //bottom
+                visibleX, visibleY, visible;
+
+            visibleX = Math.max(0, Math.min(w, window.pageXOffset + window.innerWidth - x, r - window.pageXOffset));
+            visibleY = Math.max(0, Math.min(h, window.pageYOffset + window.innerHeight - y, b - window.pageYOffset));
+
+            visible = visibleX * visibleY / (w * h);
+
+            if (visible > fraction) {
+                video.play();
+            } else {
+                video.pause();
+            }
+
+        }
+
+    }
+    window.addEventListener('scroll', checkScroll, false);
+    window.addEventListener('resize', checkScroll, false);
+</script>
+<script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=51e0d73d83d06baa7a00000f"
+        type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+        crossorigin="anonymous"></script>
+<script src="https://uploads-ssl.webflow.com/51e0d73d83d06baa7a00000f/js/webflow.fd002feec.js"
+        type="text/javascript"></script>
+</body>
+</html>
